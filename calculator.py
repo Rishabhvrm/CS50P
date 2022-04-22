@@ -5,7 +5,8 @@ y = float(input("What's y? "))
 z = round(x + y)
 
 # add comma to the number, Eg: 1,000
-print(f"{z:,}")
+# f string, a string where you could pass values in {}
+print(f"value with comma: {z:,}")
 
 
 '''
