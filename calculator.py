@@ -13,7 +13,7 @@ a = float(input("What's a? "))
 b = float(input("What's b? "))
 
 # rounding off to nearest integer
-c = round(a / b, 2)
+c = round(a / b, 3)
 print(c)
 
 '''
