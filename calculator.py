@@ -16,6 +16,9 @@ b = float(input("What's b? "))
 c = round(a / b, 3)
 print(c)
 
+d = a / b
+print(f"{d:.2f}")
+
 '''
 checking if int() would take a string
 a = input("Another input please: ")
