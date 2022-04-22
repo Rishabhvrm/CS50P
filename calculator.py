@@ -13,8 +13,8 @@ a = float(input("What's a? "))
 b = float(input("What's b? "))
 
 # rounding off to nearest integer
-z = (x / y)
-print(z)
+c = round(a / b, 2)
+print(c)
 
 '''
 checking if int() would take a string
