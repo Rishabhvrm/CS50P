@@ -8,6 +8,13 @@ z = round(x + y)
 # f string, a string where you could pass values in {}
 print(f"value with comma: {z:,}")
 
+# division
+a = float(input("What's a? "))
+b = float(input("What's b? "))
+
+# rounding off to nearest integer
+z = (x / y)
+print(z)
 
 '''
 checking if int() would take a string
