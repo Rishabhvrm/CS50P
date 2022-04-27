@@ -13,4 +13,4 @@ for _ in range(5):
     print("moo")
 
 # multiply by a number to print a text that many times
-print("sample\n" * 3)
+print("\nsample" * 3)
