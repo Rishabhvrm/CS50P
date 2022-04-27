@@ -17,7 +17,7 @@ print("sample\n" * 3, end = "")
 
 print("new topic now")
 
-# pythonic way or a convention to take user input
+# pythonic way or a convention to take user input, until user gives valid value
 while True:
     n = int(input("What's x? "))
     if n > 0:
