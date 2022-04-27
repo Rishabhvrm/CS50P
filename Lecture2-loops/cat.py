@@ -9,5 +9,8 @@ for i in [0, 1, 2]:
     print("woof")
 
 # range function in python
-for i in range(5):
+for _ in range(5):
     print("moo")
+
+# multiply by a number to print a text that many times
+print("sample\n" * 3)
