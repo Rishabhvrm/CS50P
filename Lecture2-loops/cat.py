@@ -14,3 +14,14 @@ for _ in range(5):
 
 # multiply by a number to print a text that many times
 print("sample\n" * 3, end = "")
+
+print("new topic now")
+
+# pythonic way or a convention to take user input
+while True:
+    n = int(input("What's x? "))
+    if n > 0:
+        break
+
+for _ in range(n):
+    print("meow")
