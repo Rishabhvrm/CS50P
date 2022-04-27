@@ -7,3 +7,5 @@ while i < 3:
 # list
 for i in [0, 1, 2]:
     print("woof")
+
+# range function in python
