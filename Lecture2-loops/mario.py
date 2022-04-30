@@ -5,7 +5,7 @@ def main():
 
 def print_square(size):
     for _ in range(size):
-        print("#" * 3)
+        print("#" * size)
 
 def print_square2(size):
     # for each row in square
