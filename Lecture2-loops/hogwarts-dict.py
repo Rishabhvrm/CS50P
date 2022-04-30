@@ -23,4 +23,4 @@ students2 = [
 ]
 
 for s in students2:
-    print(s["name"])
+    print(s["name"], s["house"], s["patronus"], sep = ", ")
