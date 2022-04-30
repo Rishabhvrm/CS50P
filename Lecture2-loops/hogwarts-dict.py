@@ -11,4 +11,4 @@ print (students["Hermione"])
 
 # all the keys in the dict
 for student in students:
-    print(student)
+    print(student, students[student], sep = ", ")
