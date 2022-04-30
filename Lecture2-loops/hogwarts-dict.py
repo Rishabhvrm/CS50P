@@ -6,4 +6,9 @@ students = {
     "Draco":"Slytherin"
 }
 
+# value for the key hermione
 print (students["Hermione"])
+
+# all the keys in the dict
+for student in students:
+    print(student)
