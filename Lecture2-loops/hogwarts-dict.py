@@ -16,5 +16,6 @@ for student in students:
 
 # a list of dictionaries
 students = [
-    {"name": "hermione", "house": "}
+    {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"},
+    
 ]
