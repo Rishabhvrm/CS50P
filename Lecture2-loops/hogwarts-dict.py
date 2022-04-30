@@ -12,3 +12,9 @@ print (students["Hermione"])
 # all the keys in the dict
 for student in students:
     print(student, students[student], sep = ", ")
+
+
+# a list of dictionaries
+students = [
+    {"name": "hermione", "house": "}
+]
