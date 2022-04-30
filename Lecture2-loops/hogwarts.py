@@ -1,4 +1,6 @@
 # list
 students = ['Hermione', 'Harry', 'Ron']
 
-print(students[0])
+# for looping a list
+for student in students:
+    print(student)
