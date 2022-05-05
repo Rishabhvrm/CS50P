@@ -13,6 +13,5 @@ def get_int():
         except ValueError:
             print("Please provide an integer only")
         else:
-            break
-    return x
+            return x
 main()
