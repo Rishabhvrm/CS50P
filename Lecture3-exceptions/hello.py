@@ -8,5 +8,7 @@ while True:
     except ValueError:
         print("Please provide an integer only")
     else:
-        print(f"x is {x}")
         break
+
+print(f"x is {x}")
+        
