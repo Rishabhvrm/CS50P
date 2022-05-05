@@ -1,6 +1,6 @@
 # ValueError ~ Runtime Error
 
-# try and except
+# try and except and else
 
 try:
     x = int(input("What's x? "))
@@ -8,4 +8,5 @@ try:
 except ValueError:
     print("Please provide an integer only")
 
-print(f"x is {x}")
+else:
+    print(f"x is {x}")
