@@ -14,5 +14,5 @@ def get_int():
             print("Please provide an integer only")
         else:
             break
-
+    return x
 main()
