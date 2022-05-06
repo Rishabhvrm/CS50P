@@ -1,7 +1,7 @@
 # ValueError ~ Runtime Error
 
 # try and except and else
-# pass - handle the error but pass it
+# pass - if you don't want to do anything with catched error
 
 def main():
     x = get_int()
