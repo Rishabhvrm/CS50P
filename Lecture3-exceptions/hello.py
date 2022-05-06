@@ -1,6 +1,7 @@
 # ValueError ~ Runtime Error
 
 # try and except and else
+# pass - handle the error but pass it
 
 def main():
     x = get_int()
@@ -11,7 +12,8 @@ def get_int():
         try:
             x = int(input("What's x? "))
         except ValueError:
-            print("Please provide an integer only")
+            #print("Please provide an integer only")
+            pass
         else:
             return x
 main()
