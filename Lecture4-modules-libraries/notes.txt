@@ -11,6 +11,7 @@ some of the modules that python comes with:
 
 >sys
     > eg: sys.argv // argument vector, list of words typed in prompt, this list would be contained in a variable called 'argv'
+    > eg: sys.exit(statement)
 
 you can load the modules using or 'import'(imports everything in a module) or 'from'
 eg: import random
