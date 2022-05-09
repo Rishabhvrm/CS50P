@@ -4,10 +4,16 @@ some of the modules that python comes with:
 > random
     > eg: random.choice(seq)
     > eg: random.randint(a,b)
-    > eg: random.shuffle(x) // it shuffles the argument in place
+    > eg: random.shuffle(list) // it shuffles the argument in place
+
 > statistics
-    > 
+    > eg: statistics.mean(list)
+
+>sys
+    > eg: sys.argv // argument vector, list of words typed in prompt, this list would be contained in a variable called 'argv'
 
 you can load the modules using or 'import'(imports everything in a module) or 'from'
 eg: import random
 eg: from random import choice
+
+Command-line arguments
