@@ -1,0 +1,4 @@
+modules are nothing but libraries in python
+
+some of the modules that python comes with:
+> random
