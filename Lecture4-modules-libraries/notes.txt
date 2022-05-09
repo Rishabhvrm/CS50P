@@ -1,4 +1,8 @@
 modules are nothing but libraries in python
 
-some of the modules that python comes with, you have to load them first using 'import':
+some of the modules that python comes with:
 > random, eg: random.choice(seq)
+
+you can load the modules using or 'import'(imports everything in a module) or 'from'
+eg: import random
+eg: from random import choice
