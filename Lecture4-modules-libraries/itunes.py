@@ -15,4 +15,4 @@ response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&ter
 o = response.json()
 #for result in o["results"]:
  #   print()
-print(o["results"].artistName)
+print(o["results"][0])
