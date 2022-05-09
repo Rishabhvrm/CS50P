@@ -13,7 +13,8 @@ if len(sys.argv) < 2:
 #elif len(sys.argv) > 2:
     sys.exit("Too many arguments")
 
-for arg in sys.argv:
+# taking a 'slice' of the list
+for arg in sys.argv[1:]:
     print(arg)
 
 # Print name tags
