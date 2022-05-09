@@ -3,3 +3,6 @@ import random
 
 coin = random.choice(["heads", "tails"])
 print(coin)
+
+randomInteger = random.randint(1,10)
+print(randomInteger)
