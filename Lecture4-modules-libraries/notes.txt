@@ -1,4 +1,4 @@
 modules are nothing but libraries in python
 
-some of the modules that python comes with, you have to load them first:
-> random
+some of the modules that python comes with, you have to load them first using 'import':
+> random, eg: random.choice(seq)
