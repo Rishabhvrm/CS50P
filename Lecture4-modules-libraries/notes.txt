@@ -23,3 +23,7 @@ Package: Module in a folder, a third-party library
 get packages at PyPi (Python package index)
 
 pip: package manager to download and install packages
+
+eg of packages:
+> cowsay
+> requests // to interact with APIs, allows you to make web requests
