@@ -3,6 +3,7 @@ modules are nothing but libraries in python
 some of the modules that python comes with:
 > random, eg: random.choice(seq)
 > random, eg: random.randint(a,b)
+> random, eg: random.shuffle(x) // it shuffles the argument in place
 
 you can load the modules using or 'import'(imports everything in a module) or 'from'
 eg: import random
