@@ -27,3 +27,6 @@ pip: package manager to download and install packages
 eg of packages:
 > cowsay
 > requests // to interact with APIs, allows you to make web requests
+
+module is implemented in a file
+package is in a folder
