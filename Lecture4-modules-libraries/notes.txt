@@ -18,3 +18,6 @@ eg: import random
 eg: from random import choice
 
 Command-line arguments
+
+Package: Module in a folder, a third-party library
+get packages at PyPi (Python package index)
