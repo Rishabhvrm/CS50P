@@ -13,4 +13,6 @@ print(randomInteger)
 # it shuffles the argument in place
 cards = ["jack", "queen", "king"]
 random.shuffle(cards)
-print(cards)
+#print(cards)
+for card in cards:
+    print(card)
