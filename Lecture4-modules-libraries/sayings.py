@@ -15,6 +15,7 @@ def goodbye(name):
 #print("File __name__ is = %s" % __name__)
 print(__name__)
 
+# wrapping it in a conditional
 if __name__ == "__main__":
     main()
 
