@@ -9,7 +9,10 @@ def hello(name):
 def goodbye(name):
     print(f"goodbye, {name}")
 
-main()
+#main()
 
 # __name__ is a built-in variable which evaluates to the name of the current module
 #print("File __name__ is = %s" % __name__)
+
+if __name__ == "__main__":
+    main()
