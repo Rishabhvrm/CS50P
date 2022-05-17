@@ -1,3 +1,5 @@
+# writing tests on our own
+
 from calculator import square
 
 def main():
