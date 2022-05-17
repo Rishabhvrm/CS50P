@@ -10,3 +10,5 @@ def goodbye(name):
     print(f"goodbye, {name}")
 
 main()
+
+#print("File __name__ is = %s" % __name__)
