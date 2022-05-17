@@ -11,4 +11,5 @@ def goodbye(name):
 
 main()
 
+# __name__ is a built-in variable which evaluates to the name of the current module
 #print("File __name__ is = %s" % __name__)
