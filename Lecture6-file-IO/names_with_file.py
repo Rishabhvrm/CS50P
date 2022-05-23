@@ -9,3 +9,12 @@ with open("names.txt", "a") as file:
 
 # no need for closing now bcz we're using 'with'
 # file.close()
+
+# reading lines and returning as a list
+# file.readlines()
+
+with open("names.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:
+    print(line)
