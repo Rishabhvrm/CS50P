@@ -26,4 +26,11 @@ with open("names.txt", "r") as file:
         print("hello,", line.rstrip())
 
 # if I want to sort the data that I'm reading
-names
+names = []
+
+with open("names.txt") as file:
+    for line in file:
+        names.append(line.rstrip())
+
+for name in sorted(names):
+    print(f"helllloooo, {name}")
