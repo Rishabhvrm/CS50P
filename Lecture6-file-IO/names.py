@@ -5,4 +5,7 @@ for _ in range(3):
 
 print(names)
 
+for name in sorted(names):
+    print(f"hello, {name}")
 
+print(names)
