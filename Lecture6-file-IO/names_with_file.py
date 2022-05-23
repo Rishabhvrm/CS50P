@@ -4,6 +4,7 @@ name = input("Please enter your name? ")
 
 #file = open("names.txt", "a")
 
+# write in the file
 with open("names.txt", "a") as file:
     file.write(f"{name}\n")
 
@@ -23,3 +24,6 @@ for line in lines:
 with open("names.txt", "r") as file:
     for line in file:
         print("hello,", line.rstrip())
+
+# if I want to sort the data that I'm reading
+names
