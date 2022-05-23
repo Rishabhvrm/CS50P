@@ -18,3 +18,8 @@ with open("names.txt", "r") as file:
 
 for line in lines:
     print(line.rstrip())
+
+# doing the above thing in a different way
+with open("names.txt", "r") as file:
+    for line in file:
+        print("hello,", line.rstrip())
