@@ -6,4 +6,6 @@ name = input("Please enter your name? ")
 
 with open("names.txt", "a") as file:
     file.write(f"{name}\n")
-file.close()
+
+# no need for closing now bcz we're using 'with'
+# file.close()
