@@ -22,3 +22,6 @@ with open("students_hogwarts.csv") as file:
 
 for student in students:
     print(f"{student['name']} is in {student['house']}")
+
+
+# functions as arguments
