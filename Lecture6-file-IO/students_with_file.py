@@ -33,3 +33,10 @@ def get_name(stud):
 
 for student in sorted(students, key=get_name):
     print(f"{student['name']} is in {student['house']}")
+
+
+# using lambda function instead of a separate function
+print("HOLD UP AGAIN!!!")
+
+for student in sorted(students, key=lambda student: student["name"], reverse=True):
+    print(f"{student['name']} is in {student['house']}")
