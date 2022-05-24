@@ -25,3 +25,11 @@ for student in students:
 
 
 # functions as arguments
+
+print("HOLD UP AGAIN!!!")
+
+def get_name(stud):
+    return stud["name"]
+
+for student in sorted(students, key=get_name):
+    print(f"{student['name']} is in {student['house']}")
