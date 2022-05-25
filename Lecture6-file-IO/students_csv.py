@@ -11,8 +11,9 @@ with open("students_home.csv") as file:
     '''
     # using DictReader, not a list of columns but a dictionary of columns
     reader = csv.DictReader(file)
+    print(reader)
     for row in reader:
-        students.append({"name"}: row["name"], {"home"}: row["home"])
+        students.append({"name": row["name"], "home": row["home"]})
 
 for student in sorted(students, key=lambda student: student["name"]):
     print(f"{student['name']} is from {student['home']}")
