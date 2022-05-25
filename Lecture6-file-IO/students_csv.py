@@ -12,6 +12,8 @@ with open("students_home.csv") as file:
     # using DictReader, not a list of columns but a dictionary of columns
     reader = csv.DictReader(file)
     print(reader)
+    for _ in reader:
+        print(_)
     for row in reader:
         students.append({"name": row["name"], "home": row["home"]})
 
