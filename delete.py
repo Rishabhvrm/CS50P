@@ -1,2 +1,2 @@
 var = 'var'
-print("hello", var, sep = '$####')
+print("hello", var)
