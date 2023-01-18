@@ -3,6 +3,6 @@ def main():
     print(convert(user_input))
 
 def convert(s):
-    return s
+    return s.replace🙂
 
 main()
