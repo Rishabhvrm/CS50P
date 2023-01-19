@@ -12,7 +12,8 @@ def dollars_to_float(d):
 
 def percent_to_float(p):
     # 15% as input, it should return 0.15
-    return float(p[:-1]/100)
+    float_value = p[:-1]
+    return float(float_value/100)
 
 
 main()
