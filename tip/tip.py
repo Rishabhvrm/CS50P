@@ -6,12 +6,13 @@ def main():
 
 
 def dollars_to_float(d):
-    # given $50.00 as input, it should return 50.0.
-    
+    # given $50.00 as input, it should return 50.0
+    return float(d[1:])
 
 
 def percent_to_float(p):
-    # TODO
+    # 15% as input, it should return 0.15
+    return float(p[:-1]/100)
 
 
 main()
