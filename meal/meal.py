@@ -1,12 +1,11 @@
 def main():
-    hours, minutes = input("What time is it? ").strip().split(":")
+    time = input("What time is it? ").strip()
     convert(time)
 
 def convert(time):
-    # convert string to time
+    hours, minutes = time.split(":")
+    
 
-
-    # convert time to float
 
     # map the float time to what meal it is
 
