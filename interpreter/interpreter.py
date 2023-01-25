@@ -5,7 +5,7 @@ user_input = input("Expression: ").strip().split()
 x, y, z = int(user_input[0]), user_input[1], int(user_input[2])
 
 if y == '/' and z == 0:
-    raise ZeroDivisionError
+    raise ZeroDivisionError('division by zero is not allowed')
 
 ans = 0.0
 
