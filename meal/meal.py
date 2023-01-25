@@ -32,7 +32,7 @@ def convert(time):
         minutes_in_am_pm, am_pm = minutes_with_am_pm.split(" ")
 
         # add 12 if hour is in pm and convert to int
-        hours = (int(hours_in_am_pm) + 12) if am_pm == "p.m." else int(hours_in_am_pm)
+        hours = (int(hours_in_am_pm) + 12) if am_pm == PM else int(hours_in_am_pm)
         minutes = int(minutes_in_am_pm)
 
         return (hours + minutes/60)
