@@ -17,7 +17,6 @@ def convert(time):
 
     # if time is in (24 hour format)
     if AM not in time and PM not in time:
-        print(time)
         # split the time into hours and minutes
         hours, minutes = map(int, time.split(":"))
 
