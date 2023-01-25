@@ -25,7 +25,10 @@ for k,v in dic.items():
 
 # SORTING THE DICTIONARY
 
-# this gives the list of sorted keys
-sorted_keys_list = sorted(dic)
+# this gives the list of tuples sorted by keys
+sorted_keys_list = sorted(dic.items())
+print(sorted_keys_list)
+
+# converts the list of tuples into a dictionary
 sorted_dict = dict(sorted_keys_list)
 print(sorted_dict)
