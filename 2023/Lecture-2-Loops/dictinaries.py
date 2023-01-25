@@ -13,3 +13,11 @@ dic = {
 # OUTPUT will print only the keys no matter what the name of the variable is in the loop
 for value in dic:
     print(value)
+
+# outputs keys and values both
+for key in dic:
+    print(key, dic[key])
+
+# outputs keys and values both
+for k,v in dic.items():
+    print(k + ": " + v)
