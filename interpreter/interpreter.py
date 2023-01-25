@@ -8,13 +8,13 @@ ans = 0.0
 
 match y:
     case '+':
-        ans = x + y
+        ans = x + z
     case '-':
-        ans = x - y
+        ans = x - z
     case '*':
-        ans = x * y
+        ans = x * z
     case '/':
         if z != 0:
-            ans = x / y     # if y == /, then z can't be 0
+            ans = x / z     # if y == /, then z can't be 0
 
-print(ans)
+print(float(ans))
