@@ -1,10 +1,12 @@
 def main():
     time = input("What time is it? ").strip()
-    print(convert(time))
+    print(convert(time) if True)
 
 def convert(time):
     hours, minutes = map(int, time.split(":"))
     t =  hours + minutes/60
+
+    meal_time = ""
 
     if 7 <= t <= 8:
         meal_time = "breakfast time"
