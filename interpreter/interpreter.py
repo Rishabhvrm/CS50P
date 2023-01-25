@@ -2,6 +2,6 @@
 user_input = input().strip().split()
 
 # initialize x, y and z
-x, y, z = int(values[0]), values[1], int(values[2])
+x, y, z = int(user_input[0]), user_input[1], int(user_input[2])
 
-print(x,y,z)
+print(x y z)
