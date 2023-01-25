@@ -15,6 +15,6 @@ match y:
         ans = x * z
     case '/':
         if z != 0:
-            ans = x / z     # if y == /, then z can't be 0
+            ans = x / z     # if y == /, then z can't be 0, returning 0.0, should throw an error
 
 print(float(ans))
