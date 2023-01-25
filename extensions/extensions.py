@@ -13,12 +13,22 @@ extensions = {
     "default": "application/octet-stream"
 }
 
-# condition for inputs without and extension
+# condition to check if input has dot(.)
 # input must contain a dot (.)
-if "." in user_input:
-    
-
-# print default if file name doesn't have dot(.)
-else:
+if "." not in user_input:
+    # print default if file name doesn't have dot(.)
     print(extensions["default"])
+
+else:
+    # split on basis of dot(.)
+    file_name = user_input.strip().split(".")
+    # pick last element, this should be extension of file
+    extension = file_name[-1]
+
+    # check if extension exists in the extensions dictionary
+    if extension.lower() in extensions:
+        print(extensions[extension.lower()])
+    else:
+        # print default if extension doesn't exist
+        print(extensions["default"])
 
