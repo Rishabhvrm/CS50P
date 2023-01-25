@@ -9,4 +9,4 @@ for _ in range(3):
 # it's a convention to use _ (underscore) as that variable instead of naming it 'i' or somethin else
 
 # same as above
-print("\nmeow" * 3)
+print("meow\n" * 3, end = "")
