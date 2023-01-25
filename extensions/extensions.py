@@ -1,7 +1,7 @@
 # take user input
 user_input = input("File name: ")
 
-
+# create dictionary containing mapping of extension and MIME type
 extensions = {
     "gif": "image/gif",
     "jpg": "image/jpeg",
@@ -13,16 +13,12 @@ extensions = {
     "default": "application/octet-stream"
 }
 
-
-
+# condition for inputs without and extension
+# input must contain a dot (.)
 if "." in user_input:
-    file_name = user_input.strip().split(".")
-    extension = file_name[-1]
+    
 
-    if extension.lower() in extensions:
-        print(extensions[extension.lower()])
-    else:
-        print(extensions["default"])
+# print default if file name doesn't have dot(.)
 else:
     print(extensions["default"])
 
