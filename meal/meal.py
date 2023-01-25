@@ -3,8 +3,8 @@ def main():
     convert(time)
 
 def convert(time):
-    hours, minutes = time.split(":")
-    
+    hours, minutes = map(int, time.split(":"))
+    minutes/60
 
 
     # map the float time to what meal it is
