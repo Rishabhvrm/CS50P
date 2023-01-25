@@ -1,6 +1,6 @@
 def main():
     time = input("What time is it? ").strip()
-    print(convert(time) if True)
+    print(convert(time)) 
 
 def convert(time):
     hours, minutes = map(int, time.split(":"))
