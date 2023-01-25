@@ -14,7 +14,7 @@ def convert(time):
 
     # time in 00:00 a.m. till 11:59 a.m (12 hour format)
     # is same to 00:00 to 11:59 (24 hour format)
-    if "a.m" or "p.m." not in time:
+    if  "p.m." not in time:
         # split the time into hours and minutes
         hours, minutes = map(int, time.split(":"))
 
