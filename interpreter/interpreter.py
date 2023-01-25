@@ -4,6 +4,9 @@ user_input = input("Expression: ").strip().split()
 # initialize x, y and z
 x, y, z = int(user_input[0]), user_input[1], int(user_input[2])
 
+if y == '/' and z == 0:
+    raise ZeroDivisionError
+
 ans = 0.0
 
 match y:
