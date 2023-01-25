@@ -12,8 +12,7 @@ def main():
 
 def convert(time):
 
-    # time in 00:00 a.m. till 11:59 a.m (12 hour format)
-    # is same to 00:00 to 11:59 (24 hour format)
+    # if time is in (24 hour format)
     if "a.m" and "p.m." not in time:
         # split the time into hours and minutes
         hours, minutes = map(int, time.split(":"))
@@ -21,12 +20,11 @@ def convert(time):
         # convert time to a float value
         return(hours + minutes/60)
 
+    # if time in (12 hour format)
     else:
-        # time in 12:00 p.m. till 11:59 p.m.
-
-        # split the hours and mins along with am/pm
+        # split hours and mins along with am/pm
         hours_in_am_pm, minutes_with_am_pm = time.split(":")
-        # split the mins and am/pm
+        # split mins and am/pm
         minutes_in_am_pm, am_pm = minutes_with_am_pm.split(" ")
 
         # add 12 if hour is in pm and convert to int
