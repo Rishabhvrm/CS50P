@@ -1,3 +1,6 @@
+# making this file to demonstrate
+# taking input as an integer
+
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
