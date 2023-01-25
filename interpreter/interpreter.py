@@ -1,4 +1,3 @@
 x = input()
-y = input()
-
-print(x,y)
+values = x.split()
+print(values)
