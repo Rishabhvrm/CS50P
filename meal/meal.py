@@ -1,10 +1,10 @@
 def main():
-    time = input("What time is it? ")
+    hours, minutes = input("What time is it? ").strip().split(":")
     convert(time)
 
 def convert(time):
     # convert string to time
-    
+
 
     # convert time to float
 
