@@ -23,14 +23,17 @@ def convert(time):
 
     else:
         # time in 12:00 p.m. till 11:59 p.m.
-        if "p.m." in time:
-            hours_in_pm, minutes_with_pm = time.split(":")
-            minutes_in_pm, pm = minutes_with_pm.split(" ")
 
-            hours = int(hours_in_pm) + 12
-            minutes = int(minutes_in_pm)
+        # split the hours and mins along with am/pm
+        hours_in_am_pm, minutes_with_am_pm = time.split(":")
+        # split the mins and am/pm
+        minutes_in_am_pm, am_pm = minutes_with_am_pm.split(" ")
 
-            return (hours + minutes/60)
+        # add 12 if hour is in pm and convert to int
+        hours = (int(hours_in_am_pm) + 12) if am_pm == "p.m." else int(hours_in_am_pm)
+        minutes = int(minutes_in_am_pm)
+
+        return (hours + minutes/60)
 
 
 
