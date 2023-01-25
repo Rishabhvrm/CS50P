@@ -21,3 +21,11 @@ for key in dic:
 # outputs keys and values both
 for k,v in dic.items():
     print(k + ": " + v)
+
+
+# SORTING THE DICTIONARY
+
+# this gives the list of sorted keys
+sorted_keys_list = sorted(dic)
+sorted_dict = dict(sorted_keys_list)
+print(sorted_dict)
