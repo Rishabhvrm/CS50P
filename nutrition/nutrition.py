@@ -1,6 +1,5 @@
 fruit = input("Item: ").strip().title()
 
-
 fruits_calories = {
     'Apple' : 130,
     'Avocado' : 50,
@@ -25,4 +24,5 @@ fruits_calories = {
 
 }
 
-output = print(f"Calories: {fruits_calories[fruit]}", )
+if fruit in fruits_calories:
+    output = print(f"Calories: {fruits_calories[fruit]}", )
