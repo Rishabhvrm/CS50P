@@ -5,7 +5,6 @@ def main():
 
     # prompt the user repeatedly
     # until coin_denom is in [25, 10, 5]
-    # or amount_due > 0
     while True:
 
         print(f"Amount Due: {amount_due}")
