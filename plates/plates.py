@@ -27,7 +27,7 @@ def no_period(s):
     print("2-",string.punctuation not in s)
     print("3-",string.whitespace)
     print("4-",string.whitespace not in s)
-    print ("5-",string.punctuation not in s and string.whitespace not in s)
+    print("5-",string.punctuation not in s and string.whitespace not in s)
 
 main()
 
