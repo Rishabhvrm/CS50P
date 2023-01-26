@@ -32,13 +32,13 @@ def num_at_end(s):
     if any(c.isdigit() for c in s):
         # if string has any digit at 2nd, 3rd, 4th or 5th index
         # check till last, all should be digits
-        if (check_digit_till_last(2)
-        or check_digit_till_last(3)
-        or check_digit_till_last(4)
-        or check_digit_till_last(5)):
+        if (check_digit_till_last(s,2)
+        or check_digit_till_last(s,3)
+        or check_digit_till_last(s,4)
+        or check_digit_till_last(s,5)):
             return True
 
-def check_digit_till_last(i):
+def check_digit_till_last(s,i):
     if s[i].isdigit():
         for _ in s[i:-1]:
             if _.isdigit():
