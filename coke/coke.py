@@ -10,7 +10,7 @@ def main():
             continue
 
         if amount_due <= 0:
-            print(f"Change Owed: {amount_due}")
+            print(f"Change Owed: {-amount_due}")
             print('check point')
             break
 
