@@ -28,8 +28,9 @@ def max_min_length(s):
     return 2 <= len(s) <= 6
 
 def num_at_end(s):
-    if c in 
-    for c in string.digits:
+    for c in s:
+        if c in string.digits:
+            
 
 
 # https://docs.python.org/3/library/string.html
