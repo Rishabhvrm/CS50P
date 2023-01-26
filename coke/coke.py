@@ -1,11 +1,16 @@
 def main():
-    cost = 50
+    amount_due = 50
     while True:
+        print(f"Amount Due: {amount_due}")
         coin_denom = int(input("Insert Coin: "))
-        cost = calculate_due_amount(cost, coin_denom)
 
-        if coin_denom not in [25, 10, 5] and cost != 0:
+        amount_due = calculate_due_amount(amount_due, coin_denom)
 
+        if coin_denom not in [25, 10, 5] or amount_due != 0:
+            continue
+
+        print('check point')
+        break
 
 
 
