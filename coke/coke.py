@@ -20,12 +20,7 @@ def main():
                 print(f"Change Owed: {-amount_due}")
                 break
 
-
-
-
-
 def calculate_due_amount(remaining_amount, coin_denom):
     return remaining_amount - coin_denom
-
 
 main()
