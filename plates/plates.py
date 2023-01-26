@@ -23,8 +23,14 @@ def starts_with_two_letters(s):
         # check if first 2 letters are ascii letters
         return (s[0] in string.ascii_letters and s[1] in string.ascii_letters)
 
+# length of string must be btw [2,6]
 def max_min_length(s):
     return 2 <= len(s) <= 6
+
+def num_at_end(s):
+    if c in 
+    for c in string.digits:
+
 
 # https://docs.python.org/3/library/string.html
 def no_period(s):
