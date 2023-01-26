@@ -9,7 +9,7 @@ def is_valid(s):
 
     #print(starts_with_two_letters(s))
     #print(max_min_length(s))
-    #num_at_end(s)
+    print(num_at_end(s))
     #first_num_zero(s)
     #print(no_period(s))
 
@@ -32,10 +32,13 @@ def num_at_end(s):
     if any(c.isdigit() for c in s):
         # if string has any digit at 2nd, 3rd, 4th or 5th index
         # check till last, all should be digits
-        if (foo(2) or foo(3) or foo(4) or foo(5)):
+        if (check_digit_till_last(2)
+        or check_digit_till_last(3)
+        or check_digit_till_last(4)
+        or check_digit_till_last(5)):
             return True
 
-def foo(i):
+def check_digit_till_last(i):
     if s[i].isdigit():
         for _ in s[i:-1]:
             if _.isdigit():
