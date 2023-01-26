@@ -7,14 +7,14 @@ def main():
 def is_valid(s):
     valid = False
 
-    #print(starts_with_two_letters(s))
-    #print(max_min_length(s))
-    print(num_at_end(s))
+    a = (starts_with_two_letters(s))
+    b = (max_min_length(s))
+    #print(num_at_end(s))
     #first_num_zero(s)
-    #print(no_period(s))
+    c = (no_period(s))
 
-    #if (a and b and c and d):
-    #    valid = True
+    if (a and b and c):
+        valid = True
 
     return valid
 
@@ -26,43 +26,6 @@ def starts_with_two_letters(s):
 # length of string must be btw [2,6]
 def max_min_length(s):
     return 2 <= len(s) <= 6
-
-def num_at_end(s):
-    # if string has any digit at all
-
-
-##1234
-###123
-####12
-#####1
-
-##123
-
-
-    if any(c.isdigit() for c in s):
-        # if string has any digit at 2nd, 3rd, 4th or 5th index
-        # check till last, all should be digits
-        l = len(s)
-        first_occurance = 0
-
-        for i in range(l):
-            if s[i].isdigit():
-                first_occurance = i
-                break
-
-        for j in range(l):
-            if not check_digit_till_last(first_occurance,s):
-                return False
-    return True
-
-def check_digit_till_last(i,s):
-    if s[i].isdigit():
-        for _ in s[i:-1]:
-            if not _.isdigit():
-                print('uay')
-                return False
-    return True
-
 
 
 
