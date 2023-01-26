@@ -23,11 +23,11 @@ def starts_with_two_letters(s):
 
 # https://docs.python.org/3/library/string.html
 def no_period(s):
-    print(string.punctuation)
-    print(string.punctuation not in s)
-    print(string.whitespace)
-    print(string.whitespace not in s)
-    print (string.punctuation not in s and string.whitespace not in s)
+    print("1-",string.punctuation)
+    print("2-",string.punctuation not in s)
+    print("3-",string.whitespace)
+    print("4-",string.whitespace not in s)
+    print ("5-",string.punctuation not in s and string.whitespace not in s)
 
 main()
 
