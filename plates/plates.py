@@ -41,8 +41,9 @@ def num_at_end(s):
 def check_digit_till_last(s,i):
     if s[i].isdigit():
         for _ in s[i:-1]:
-            if _.isdigit():
-                return True
+            if not _.isdigit():
+                return False
+    return True
 
 
 
