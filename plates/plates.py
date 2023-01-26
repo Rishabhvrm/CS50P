@@ -40,6 +40,7 @@ def num_at_end(s):
             return False
         if not check_digit_till_last(s,5):
             return False
+    return True
 
 def check_digit_till_last(s,i):
     if s[i].isdigit():
