@@ -31,6 +31,8 @@ def num_at_end(s):
     for c in s:
         if c.isdigit():
 
+    c.isdigit() for c in s
+
 
 
 # https://docs.python.org/3/library/string.html
