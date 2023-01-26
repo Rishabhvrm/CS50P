@@ -17,7 +17,7 @@ def is_valid(s):
     return valid
 
 def starts_with_two_letters(s):
-    for c in s:
-        
+    s[0] in string.ascii_letters
+
 
 main()
