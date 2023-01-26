@@ -51,11 +51,11 @@ def num_at_end(s):
                 break
 
         for j in range(l):
-            if not check_digit_till_last(first_occurance,l):
+            if not check_digit_till_last(first_occurance,s):
                 return False
     return True
 
-def check_digit_till_last(s,i):
+def check_digit_till_last(i,s):
     if s[i].isdigit():
         for _ in s[i:-1]:
             if not _.isdigit():
