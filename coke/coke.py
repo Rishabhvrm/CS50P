@@ -3,7 +3,7 @@ def main():
     while True:
         print(f"Amount Due: {cost}")
         coin_denom = int(input("Insert Coin: "))
-        if coin_denom in [25, 10, 5] and cost == 0:
+        if coin_denom in [25, 10, 5] and cost != 0:
             print(f"cost - {cost}")
             cost = calculate_due_amount(cost, coin_denom)
             print(f"Amount Due: {cost}")
