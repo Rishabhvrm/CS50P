@@ -30,10 +30,14 @@ def max_min_length(s):
 def num_at_end(s):
     # if string has any digit
     if any(c.isdigit() for c in s):
-        if s[2].isdigit():
-            for _ in s[2:-1]:
-                if _.isdigit():
-                    return True
+        if (foo(2) or foo(3) or foo(4) or foo(5)):
+            return True
+
+def foo(i):
+    if s[i].isdigit():
+        for _ in s[i:-1]:
+            if _.isdigit():
+                return True
 
 
 
