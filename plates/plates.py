@@ -43,15 +43,16 @@ def num_at_end(s):
         # if string has any digit at 2nd, 3rd, 4th or 5th index
         # check till last, all should be digits
         l = len(s)
-        if l == 6:
-            if not check_digit_till_last(s,2):
-                return False
+        first_occurance = 0
 
-        if not check_digit_till_last(s,3):
-            return False
-        if not check_digit_till_last(s,4):
-            return False
-        
+        for i in range(l):
+            if s[i].isdigit():
+                first_occurance = i
+                break
+
+        for j in range(l):
+            if not check_digit_till_last(first_occurance,l):
+                return False
     return True
 
 def check_digit_till_last(s,i):
