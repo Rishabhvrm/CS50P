@@ -6,11 +6,13 @@ def main():
 
         amount_due = calculate_due_amount(amount_due, coin_denom)
 
-        if coin_denom not in [25, 10, 5] or amount_due != 0:
+        if coin_denom not in [25, 10, 5] or amount_due > 0:
             continue
 
-        print('check point')
-        break
+        if amount_due <= 0:
+            print(f"Change Owed: {amount_due}")
+            print('check point')
+            break
 
 
 
