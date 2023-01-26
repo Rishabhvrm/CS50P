@@ -42,6 +42,7 @@ def check_digit_till_last(s,i):
     if s[i].isdigit():
         for _ in s[i:-1]:
             if not _.isdigit():
+                print('uay')
                 return False
     return True
 
