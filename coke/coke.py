@@ -11,8 +11,8 @@ def main():
         print(f"Amount Due: {amount_due}")
         coin_denom = int(input("Insert Coin: "))
 
-        # continue if conditions met
-        if coin_denom in [25, 10, 5] and amount_due > 0:
+        # continue if user enters correct coin denomination
+        if coin_denom in [25, 10, 5]:
 
             # calculate amount due
             amount_due = calculate_due_amount(amount_due, coin_denom)
@@ -25,7 +25,7 @@ def main():
                 print(f"Change Owed: {-amount_due}")
                 break
 
-            
+
 
 
 
