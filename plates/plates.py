@@ -11,7 +11,7 @@ def is_valid(s):
     #max_min_length(s)
     #num_at_end(s)
     #first_num_zero(s)
-    no_period(s)
+    print(no_period(s))
 
     #if (a and b and c and d):
     #    valid = True
@@ -23,11 +23,17 @@ def starts_with_two_letters(s):
 
 # https://docs.python.org/3/library/string.html
 def no_period(s):
-    print("1-",string.punctuation)
-    print("2-",string.punctuation not in s)
-    print("3-",string.whitespace)
-    print("4-",string.whitespace not in s)
-    print("5-",string.punctuation not in s and string.whitespace not in s)
+
+    for p in string.punctuation:
+        if p in s:
+            return False
+
+    for p in string.whitespace:
+        if p in s:
+            return False
+
+    return True
+
 
 main()
 
