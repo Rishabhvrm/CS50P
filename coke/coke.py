@@ -5,6 +5,7 @@ def main():
         coin_denom = int(input("Insert Coin: "))
         if coin_denom in [25, 10, 5]:
             cost = calculate_due_amount(cost, coin_denom)
+            print(f"Amount Due: {cost}")
             break
 
     print("yay")
