@@ -28,8 +28,10 @@ def max_min_length(s):
     return 2 <= len(s) <= 6
 
 def num_at_end(s):
-    # if string has any digit
+    # if string has any digit at all
     if any(c.isdigit() for c in s):
+        # if string has any digit at 2nd, 3rd, 4th or 5th index
+        # check till last, all should be digits
         if (foo(2) or foo(3) or foo(4) or foo(5)):
             return True
 
