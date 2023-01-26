@@ -7,27 +7,34 @@ def main():
 def is_valid(s):
     valid = False
 
-    #starts_with_two_letters(s)
-    #max_min_length(s)
+    #print(starts_with_two_letters(s))
+    #print(max_min_length(s))
     #num_at_end(s)
     #first_num_zero(s)
-    print(no_period(s))
+    #print(no_period(s))
 
     #if (a and b and c and d):
     #    valid = True
 
     return valid
 
+# https://docs.python.org/3/library/string.html
 def starts_with_two_letters(s):
-        print (s[0] in string.ascii_letters and s[1] in string.ascii_letters)
+        # check if first 2 letters are ascii letters
+        return (s[0] in string.ascii_letters and s[1] in string.ascii_letters)
+
+def max_min_length(s):
+    return 2 <= len(s) <= 6
 
 # https://docs.python.org/3/library/string.html
 def no_period(s):
 
+    # check for punctation in s
     for p in string.punctuation:
         if p in s:
             return False
 
+    # check for whitespace in s
     for p in string.whitespace:
         if p in s:
             return False
