@@ -29,7 +29,16 @@ def max_min_length(s):
 
 def num_at_end(s):
     # if string has any digit at all
-    
+
+
+##1234
+###123
+####12
+#####1
+
+##123
+
+
     if any(c.isdigit() for c in s):
         # if string has any digit at 2nd, 3rd, 4th or 5th index
         # check till last, all should be digits
@@ -42,8 +51,7 @@ def num_at_end(s):
             return False
         if not check_digit_till_last(s,4):
             return False
-        if not check_digit_till_last(s,5):
-            return False
+        
     return True
 
 def check_digit_till_last(s,i):
@@ -74,4 +82,3 @@ def no_period(s):
 
 
 main()
-
