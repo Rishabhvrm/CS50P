@@ -32,8 +32,11 @@ def num_at_end(s):
     if any(c.isdigit() for c in s):
         # if string has any digit at 2nd, 3rd, 4th or 5th index
         # check till last, all should be digits
-        if not check_digit_till_last(s,2):
-            return False
+        l = len(s)
+        if l == 6:
+            if not check_digit_till_last(s,2):
+                return False
+        
         if not check_digit_till_last(s,3):
             return False
         if not check_digit_till_last(s,4):
