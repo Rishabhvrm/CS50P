@@ -23,6 +23,8 @@ while True:
 
 total = 0
 
+print(menu[current_order])
+
 total += menu[current_order]
 print(f"Total: ${total}")
 
