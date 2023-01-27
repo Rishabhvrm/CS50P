@@ -1,3 +1,4 @@
+# initialize menu and total
 menu = {
     "Baja Taco": 4.00,
     "Burrito": 7.50,
@@ -12,17 +13,18 @@ menu = {
 
 total = 0
 
+# prompt the user until EOF (Ctrl + D) happens
 while True:
     try:
         order = input("Item: ")
     except EOFError:
         break
+    else:
+        current_order = order.title()
 
-    current_order = order.title()
-
-    if current_order in menu:
-        total += menu[current_order]
-        print(f"Total: ${total:.2f}")
+        if current_order in menu:
+            total += menu[current_order]
+            print(f"Total: ${total:.2f}")
 
 
 
