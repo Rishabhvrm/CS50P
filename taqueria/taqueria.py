@@ -21,3 +21,5 @@ total = 0
 
 total += menu[current_order]
 print(f"Total: ${total}")
+
+EOFError
