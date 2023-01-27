@@ -1,6 +1,6 @@
 def main():
     x, y = input("Fraction: ").strip().split('/')
-    p = calculate_percent(x,y)
+    p = str(calculate_percent(x,y)) + "%"
 
     # check 'Full' or 'Empty' conditions
     if p < 1:
@@ -8,7 +8,7 @@ def main():
     elif p > 99:
         p = 'F'
 
-    print(f"{p}%")
+    print(f"{p}")
 
 
 def calculate_percent(x,y):
