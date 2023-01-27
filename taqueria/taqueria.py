@@ -14,14 +14,14 @@ while True:
     try:
         order = input("Item: ")
     except EOFError:
-        pass
-
-    current_order = order.title()
-    if current_order in menu:
         break
 
-total = 0
+    current_order = order.title()
+    total = 0
 
-total += menu[current_order]
+    if current_order in menu:
+        total += menu[current_order]
+
+
 print(f"Total: ${total}")
 
