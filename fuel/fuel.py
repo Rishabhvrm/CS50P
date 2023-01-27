@@ -3,12 +3,7 @@ def main():
     p = calculate_percent(x,y)
 
     # check 'Full' or 'Empty' conditions
-    if p < 1:
-        print('E')
-    elif p > 99:
-        print('F')
-
-    print(f"{p}%")
+    print(f"{p}%" if (1 <= p <= 99) else ('E' if p < 1 else 'F'))
 
 
 
