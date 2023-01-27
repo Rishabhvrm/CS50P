@@ -12,11 +12,11 @@ menu = {
 
 while True:
     order = input("Item: ")
-    print(order.title())
+
     if order in menu:
         break
 
 total = 0
-
-total += menu[order.title()]
+current_order = order.title()
+total += menu[current_order]
 print(f"Total: ${total}")
