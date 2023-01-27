@@ -11,7 +11,11 @@ menu = {
 }
 
 while True:
-    order = input("Item: ")
+    try:
+        order = input("Item: ")
+    except EOFError:
+        pass
+
     current_order = order.title()
     print(current_order)
     if order in menu:
@@ -22,4 +26,3 @@ total = 0
 total += menu[current_order]
 print(f"Total: ${total}")
 
-EOFError
