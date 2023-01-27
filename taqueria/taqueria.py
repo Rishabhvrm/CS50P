@@ -18,7 +18,7 @@ while True:
 
     current_order = order.title()
     print(current_order)
-    if order in menu:
+    if current_order in menu:
         break
 
 total = 0
