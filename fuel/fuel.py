@@ -4,11 +4,11 @@ def main():
         x, y = int(x), int(y)
     except ValueError:
         pass
+    else:
+        p = calculate_percent(x,y)
 
-    p = calculate_percent(x,y)
-
-    # check 'Full' or 'Empty' conditions
-    print(f"{p}%" if (1 <= p <= 99) else ('E' if p < 1 else 'F'))
+        # check 'Full' or 'Empty' conditions
+        print(f"{p}%" if (1 <= p <= 99) else ('E' if p < 1 else 'F'))
 
 
 def calculate_percent(x,y):
