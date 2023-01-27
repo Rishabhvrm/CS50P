@@ -18,7 +18,7 @@ while True:
 
     current_order = order.title()
     total = 0
-
+    
     if current_order in menu:
         total += menu[current_order]
 
