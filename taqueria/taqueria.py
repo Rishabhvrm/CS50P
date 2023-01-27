@@ -22,7 +22,7 @@ while True:
 
     if current_order in menu:
         total += menu[current_order]
-        print(f"Total: ${total}")
+        print(f"Total: ${total:.2f}")
 
 
 
