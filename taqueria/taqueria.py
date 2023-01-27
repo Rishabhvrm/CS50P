@@ -20,8 +20,11 @@ while True:
     except EOFError:
         break
     else:
+        # convert the order to title case
         current_order = order.title()
 
+        # check if item is in menu
+        # add to total
         if current_order in menu:
             total += menu[current_order]
             print(f"Total: ${total:.2f}")
