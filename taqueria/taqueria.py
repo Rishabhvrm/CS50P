@@ -17,5 +17,5 @@ while True:
         break
 
 total = 0
-total += menu[order]
+total += menu[order.title()]
 print(f"Total: ${total}")
