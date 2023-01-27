@@ -7,7 +7,7 @@
 
 ## 'SyntaxError'
 ## 'ValueError'
-# will throw a ValueError if anything other than int is given in the input
+# will throw a 'ValueError' if anything other than int is given in the input
 #x = int(input("What's x: "))
 #print(x)
 
