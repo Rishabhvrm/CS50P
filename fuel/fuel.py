@@ -11,7 +11,7 @@ def main():
 
         else:
             # check 'Full' or 'Empty' conditions
-            print(f"{p}%" if (1 < p < 99) else ('E' if p =< 1 else 'F'))
+            print(f"{p}%" if (1 < p < 99) else ('E' if p <= 1 else 'F'))
             break
 
 main()
