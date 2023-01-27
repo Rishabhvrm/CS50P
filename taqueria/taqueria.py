@@ -17,13 +17,10 @@ while True:
         pass
 
     current_order = order.title()
-    print(current_order)
     if current_order in menu:
         break
 
 total = 0
-
-print(menu[current_order])
 
 total += menu[current_order]
 print(f"Total: ${total}")
