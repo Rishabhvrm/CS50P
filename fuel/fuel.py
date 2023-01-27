@@ -3,7 +3,7 @@ def main():
         try:
             x, y = input("Fraction: ").strip().split('/')
             x, y = int(x), int(y)
-        except ValueError or :
+        except ValueError:
             pass
         else:
             p = calculate_percent(x,y)
@@ -14,6 +14,9 @@ def main():
 
 
 def calculate_percent(x,y):
-    return round(100 * x/y)
+    try:
+        return round(100 * x/y)
+    except ZeroDivisionError:
+        pass
 
 main()
