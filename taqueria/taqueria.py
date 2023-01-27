@@ -10,6 +10,8 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
+total = 0
+
 while True:
     try:
         order = input("Item: ")
@@ -17,7 +19,6 @@ while True:
         break
 
     current_order = order.title()
-    total = 0
 
     if current_order in menu:
         total += menu[current_order]
