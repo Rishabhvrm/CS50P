@@ -1,6 +1,6 @@
 from collections import Counter
 
-item_list = []
+item_dict = dict()
 
 
 while True:
