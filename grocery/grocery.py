@@ -10,6 +10,6 @@ while True:
     except EOFError:
         break
     else:
-        item_list.append(item)
+        item_list.add(item)
 
 print(Counter(item_list))
