@@ -1,4 +1,7 @@
+from collections import Counter
+
 item_list = []
+
 
 while True:
 
@@ -9,4 +12,4 @@ while True:
     else:
         item_list.append(item)
 
-print(item_list)
+print(Counter(item_list))
