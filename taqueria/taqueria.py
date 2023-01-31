@@ -24,7 +24,7 @@ while True:
         current_order = order.title()
 
         # check if item is in menu
-        # add to total
+        # add to total 
         if current_order in menu:
             total += menu[current_order]
             print(f"Total: ${total:.2f}")
