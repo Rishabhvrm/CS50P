@@ -16,4 +16,6 @@ months = [
 while True:
     try:
         date = input("Date: ")
-        if date.
+        # if date is in correct format
+            # break out of the loop
+
