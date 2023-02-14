@@ -13,9 +13,10 @@ months = [
     "December"
 ]
 
-while True:
+#while True:
 
-    date = input("Date: ")
+date = input("Date: ")
+print(date[0])
     # if date is in correct format
         # break out of the loop
 
