@@ -53,8 +53,8 @@ if num_date:
     print(f"{year}-{month.zfill(2)}-{date.zfill(2)}")
 
 if word_date:
-    month, date, year = date.split(' ').strip()
-    print(f"{year}-{month.zfill(2)}-{date.zfill(2)}")
+    month, date, year = date.split(' ')
+    print(f"{year}-{month.zfill(2)}-{date[:-1].zfill(2)}")
 
 
 # print out put
