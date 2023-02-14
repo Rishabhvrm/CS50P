@@ -50,11 +50,11 @@ print(date[0])
 # if date is in format 9/8/1636
 if num_date:
     month, date, year = date.split('/')
-    print(f"{year}-{month:02d}-{date:02}")
+    print(f"{year}-{month.zfill(2)}-{date.zfill(2)}")
 
 if word_date:
     month, date, year = date.split(' ').strip()
-    print(f"{year}-{month:2}-{date:02}")
+    print(f"{year}-{month.zfill(2)}-{date.zfill(2)}")
 
 
 # print out put
