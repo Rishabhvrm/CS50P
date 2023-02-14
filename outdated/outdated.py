@@ -1,17 +1,17 @@
-months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-]
+months = {
+    "January": 1,
+    "February": 2,
+    "March": 3,
+    "April": 4,
+    "May": 5,
+    "June": 6,
+    "July": 7,
+    "August": 8,
+    "September": 9,
+    "October": 10,
+    "November": 11,
+    "December": 12
+}
 
 #while True:
 
@@ -30,7 +30,7 @@ if date[0].isdigit():
 elif date[0].isalpha():
     print("it's word date guys")
     a, b = date.split(' ', maxsplit=1)
-    if a.title() in months:
+    if a.title() in months.keys():
         is_date = True
         word_date = True
 
@@ -54,7 +54,7 @@ if num_date:
 
 if word_date:
     month, date, year = date.split(' ')
-    print(f"{year}-{month.zfill(2)}-{date[:-1].zfill(2)}")
+    print(f"{year}-{months[month]:02}-{date[:-1].zfill(2)}")
 
 
 # print out put
