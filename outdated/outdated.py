@@ -24,7 +24,8 @@ is_date = False
 if date[0].isdigit():
     if 1<= date[0] <= 12:
         is_date = True
-elif date[0].
+elif date[0].isalpha():
+    if
 
 print(date[0])
     # if date is in correct format
