@@ -23,19 +23,17 @@ while True:
     # this format: 9/8/1636
     # check if first char is a number
     if date[0].isdigit():
-        # check valid month
-        if 1<= int(date[0]) <= 12:
+        # check valid month and date
+        month, date, year = date.split('/')
+        if 1<= int(month) <= 12 and 1 <= int(date) <= 31:
+            is_date = True
             num_date = True
-            month, date, year = date.split('/')
-            if 1 <= int(date) <= 31:
-                is_date = True
-
 
     # determine if date is in
     # this format: September 8, 1636
     elif date[0].isalpha():
         a, b = date.split(' ', maxsplit=1)
-        if a.title() in months.keys():
+        if a.title() in months.keys() and :
             is_date = True
             word_date = True
 
