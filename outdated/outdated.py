@@ -32,8 +32,8 @@ while True:
     # determine if date is in
     # this format: September 8, 1636
     elif date[0].isalpha():
-        a, b = date.split(' ', maxsplit=1)
-        if a.title() in months.keys() and :
+        month, date, year = date.split(' ')
+        if month.title() in months.keys() and 1 <= int(date[:-1]) <= 31:
             is_date = True
             word_date = True
 
@@ -50,11 +50,9 @@ while True:
 # format the date
 # if date is in format 9/8/1636
 if num_date:
-
     print(f"{year}-{month.zfill(2)}-{date.zfill(2)}")
 
 if word_date:
-    month, date, year = date.split(' ')
     print(f"{year}-{months[month]:02}-{date[:-1].zfill(2)}")
 
 
