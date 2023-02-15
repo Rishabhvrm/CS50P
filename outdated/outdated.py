@@ -1,3 +1,5 @@
+import re
+
 # define months dictionary
 months = {
     "January": 1,
@@ -23,6 +25,7 @@ while True:
 
     # check date format: month_digit/date_digit/year_digit
     # check if first element is a digit
+    re.search("\d")
     if date[0].isdigit():
         month, date, year = date.split('/')
         month, date = int(month), int(date)
