@@ -19,15 +19,20 @@ word_date, num_date = False, False
 while True:
     date = input("Date: ").strip()
 
+    # determine if date is in
+    # this format: 9/8/1636
+    # check if first char is a number
+    if date[0].isdigit():
+        # check valid month
+        if 1<= int(date[0]) <= 12:
+            num_date = True
+            month, date, year = date.split('/')
+            if 1 <= date <= 31:
+                is_date = True
+
 
     # determine if date is in
-    # this 9/8/1636
-    if date[0].isdigit():
-        if 1<= int(date[0]) <= 12:
-            is_date = True
-            num_date = True
-
-    # this format September 8, 1636
+    # this format: September 8, 1636
     elif date[0].isalpha():
         a, b = date.split(' ', maxsplit=1)
         if a.title() in months.keys():
@@ -47,7 +52,7 @@ while True:
 # format the date
 # if date is in format 9/8/1636
 if num_date:
-    month, date, year = date.split('/')
+
     print(f"{year}-{month.zfill(2)}-{date.zfill(2)}")
 
 if word_date:
