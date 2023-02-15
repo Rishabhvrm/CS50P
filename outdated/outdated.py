@@ -51,9 +51,10 @@ while True:
 
 
 # format the date
-if numerical_date:
-    print(f"{year}-{month:02}-{date:02}")
+#if numerical_date:
+#    print(f"{year}-{month:02}-{date:02}")
 
-if spelled_date:
-    print(f"{year}-{months[month]:02}-{date:02}")
+#if spelled_date:
+#    print(f"{year}-{months[month]:02}-{date:02}")
 
+print(f"{year}-{month:02}-{date:02}" if numerical_date else f"{year}-{months[month]:02}-{date:02}")
