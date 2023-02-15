@@ -1,3 +1,4 @@
+# define months dictionary
 months = {
     "January": 1,
     "February": 2,
@@ -13,14 +14,13 @@ months = {
     "December": 12
 }
 
-is_date = False
-word_date, num_date = False, False
+# define variables
+is_date, word_date, num_date = False, False, False
 
 while True:
     date = input("Date: ").strip()
 
-    # determine if date is in
-    # this format: 9/8/1636
+    # check date format: 9/8/1636
     # check if first char is a number
     if date[0].isdigit():
         # check valid month and date
