@@ -20,14 +20,14 @@ while True:
     date = input("Date: ").strip()
 
 
-# determine if date is in
-# this format September 8, 1636
-# or this 9/8/1636
+    # determine if date is in
+    # this 9/8/1636
     if date[0].isdigit():
         if 1<= int(date[0]) <= 12:
             is_date = True
             num_date = True
 
+    # this format September 8, 1636
     elif date[0].isalpha():
         a, b = date.split(' ', maxsplit=1)
         if a.title() in months.keys():
