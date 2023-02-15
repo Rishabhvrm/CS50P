@@ -27,7 +27,7 @@ while True:
         if 1<= int(date[0]) <= 12:
             num_date = True
             month, date, year = date.split('/')
-            if 1 <= date <= 31:
+            if 1 <= int(date) <= 31:
                 is_date = True
 
 
