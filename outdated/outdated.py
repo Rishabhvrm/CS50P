@@ -15,45 +15,45 @@ months = {
 }
 
 # define variables
-is_date, word_date, num_date = False, False, False
+valid_date, spelled_date, numerical_date = False, False, False
 
+# prompt user until valid date provided
 while True:
     date = input("Date: ").strip()
 
-    # check date format: 9/8/1636
-    # check if first char is a number
+    # check date format: month_digit/date_digit/year_digit
+    # check if first element is a digit
     if date[0].isdigit():
-        # check valid month and date
         month, date, year = date.split('/')
-        if 1<= int(month) <= 12 and 1 <= int(date) <= 31:
-            is_date = True
-            num_date = True
+        month, date = int(month), int(date)
 
-    # determine if date is in
-    # this format: September 8, 1636
+        # validate month & date
+        if 1<= month <= 12 and 1 <= date <= 31:
+            valid_date = True
+            numerical_date = True
+
+    # check date format: month_spelled date_digit, year_digit
+    # check if first element is a char
     elif date[0].isalpha():
         month, date, year = date.split(' ')
-        if month.title() in months.keys() and 1 <= int(date[:-1]) <= 31:
-            is_date = True
-            word_date = True
+        # exclude comma(,) at end of date
+        date = int(date[:-1])
 
-    # if date is in correct format
+        # validate month and date
+        if month.title() in months.keys() and 1 <= date <= 31:
+            valid_date = True
+            spelled_date = True
+
+    # if correct date format
     # break out of the loop
-    if is_date:
+    if valid_date:
         break
-        #pass
-
-#print(a)
-#print(b)
 
 
 # format the date
-# if date is in format 9/8/1636
-if num_date:
-    print(f"{year}-{month.zfill(2)}-{date.zfill(2)}")
+if numerical_date:
+    print(f"{year}-{month:02}-{date:02}")
 
-if word_date:
-    print(f"{year}-{months[month]:02}-{date[:-1].zfill(2)}")
+if spelled_date:
+    print(f"{year}-{months[month]:02}-{date:02}")
 
-
-# print output
