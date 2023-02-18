@@ -39,11 +39,12 @@ while True:
     elif date[0].isalpha():
         if re.search("[a-zA-z]\s\d\,\s\d\d\d\d", date):
             month, date, year = date.split(' ')
+            month = month.title()
             # exclude comma(,) at end of date
             date = int(date[:-1])
 
             # validate month and date
-            if month.title() in months.keys() and 1 <= date <= 31:
+            if month in months.keys() and 1 <= date <= 31:
                 valid_date = True
                 spelled_date = True
 
