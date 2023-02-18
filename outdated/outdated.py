@@ -27,38 +27,26 @@ while True:
     # check if first element is a digit
     if re.search("\d\/\d\/\d\d\d\d", date):
         month, date, year = date.split('/')
-        month, date = int(month), int(date)
+        month, date = int(month), int(date)                            # convert to int
 
-        # validate month & date
-        if 1<= month <= 12 and 1 <= date <= 31:
+        if 1<= month <= 12 and 1 <= date <= 31:                        # validate month & date
             valid_date = True
             numerical_date = True
 
-    # check date format: month_spelled date_digit, year_digit
+    # check date format: month_spelled date_digit, year_digit (use regex)
     # check if first element is a char
     elif date[0].isalpha():
         if re.search("[a-zA-z]\s\d\,\s\d\d\d\d", date):
             month, date, year = date.split(' ')
-            month = month.title()
-            # exclude comma(,) at end of date
-            date = int(date[:-1])
+            month = month.title()                                      # use title() to match the dictionary keys
+            date = int(date[:-1])                                      # exclude comma(,) at end of date
 
-            # validate month and date
-            if month in months.keys() and 1 <= date <= 31:
+            if month in months.keys() and 1 <= date <= 31:             # validate month and date
                 valid_date = True
                 spelled_date = True
 
-    # if correct date format
-    # break out of the loop
-    if valid_date:
+    if valid_date:                                                     # if correct date format, break out of loop
         break
 
-
-# format the date
-#if numerical_date:
-#    print(f"{year}-{month:02}-{date:02}")
-
-#if spelled_date:
-#    print(f"{year}-{months[month]:02}-{date:02}")
-
+# print date conditionally, if it is numerical or spelled
 print(f"{year}-{month:02}-{date:02}" if numerical_date else f"{year}-{months[month]:02}-{date:02}")
