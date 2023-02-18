@@ -37,14 +37,15 @@ while True:
     # check date format: month_spelled date_digit, year_digit
     # check if first element is a char
     elif date[0].isalpha():
-        month, date, year = date.split(' ')
-        # exclude comma(,) at end of date
-        date = int(date[:-1])
+        if re.search("[a-zA-z]\s\d\,\s\d\d\d\d", date):
+            month, date, year = date.split(' ')
+            # exclude comma(,) at end of date
+            date = int(date[:-1])
 
-        # validate month and date
-        if month.title() in months.keys() and 1 <= date <= 31:
-            valid_date = True
-            spelled_date = True
+            # validate month and date
+            if month.title() in months.keys() and 1 <= date <= 31:
+                valid_date = True
+                spelled_date = True
 
     # if correct date format
     # break out of the loop
