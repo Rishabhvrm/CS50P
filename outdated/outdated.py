@@ -23,10 +23,9 @@ valid_date, spelled_date, numerical_date = False, False, False
 while True:
     date = input("Date: ").strip()
 
-    # check date format: month_digit/date_digit/year_digit
+    # check date format: month_digit/date_digit/year_digit, use regex to match d/d/dddd
     # check if first element is a digit
     if re.search("\d\/\d\/\d\d\d\d", date):
-    #if date[0].isdigit():
         month, date, year = date.split('/')
         month, date = int(month), int(date)
 
