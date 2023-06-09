@@ -27,4 +27,6 @@ print(statistics.mean([100,90]))
 
 # COMMAND-LINE ARGUMENTS
 # sys.argv
+import sys
 
+print('hello, my name is', sys.argv[1])
