@@ -35,6 +35,9 @@ if len(sys.argv) < 2:
 elif len(sys.argv) > 2:
     sys.exit('Too many arguments')
 
-print('hello, my name is', sys.argv[1])
 
 # print name
+print('hello, my name is', sys.argv[1])
+
+
+# SLICE in strings
