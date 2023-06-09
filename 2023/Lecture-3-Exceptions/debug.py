@@ -5,4 +5,6 @@ def main():
 
 def pyramid(h):
     for i in range(h):
-        print("#" *)
+        print("#" * i)
+
+main()
