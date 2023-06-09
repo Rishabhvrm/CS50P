@@ -13,5 +13,3 @@ if len(sys.argv) == 2:
 
 
 # ---------------------------------------------------------------
-
-# APIs - third party services that we can write code to talk to
