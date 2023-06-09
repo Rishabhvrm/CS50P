@@ -29,7 +29,12 @@ print(statistics.mean([100,90]))
 # sys.argv
 import sys
 
-try:
-    print('hello, my name is', sys.argv[1])
-except IndexError:
-    print('Too few arguments')
+# check for errors
+if len(sys.argv) < 2:
+    sys.exit('Too few arguments')          # by sys.exit we are making sure that program would exit and not reach further lines of code
+elif len(sys.argv) > 2:
+    sys.exit('Too many arguments')
+
+print('hello, my name is', sys.argv[1])
+
+# print name
