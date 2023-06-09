@@ -17,3 +17,12 @@ print(number)
 cards = ['jack', 'queen', 'king']
 random.shuffle(cards)
 print(cards)
+
+
+# STATISTICS
+import statistics
+
+print(statistics.mean([100,90]))
+
+
+# COMMAND-LINE ARGUMENTS
