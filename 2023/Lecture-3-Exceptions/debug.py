@@ -1,3 +1,5 @@
+# mario
+
 def main():
     height = int(input("Height: "))
     pyramid(height)
