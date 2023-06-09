@@ -65,3 +65,16 @@ print(f"x is {x}")
 # more pythonic way is to 'try' something
 # except if it doesn't work
 # # also 'raise' - we can raise exceptions
+
+def main():
+    x = get_int("What's x? ")
+    print(f'x is {x}')
+
+def get_int(prompt):
+    while True:
+        try:
+            return int(input(prompt))
+        except ValueError:
+            pass
+
+main()

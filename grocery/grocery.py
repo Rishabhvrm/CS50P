@@ -14,7 +14,7 @@ while True:
         # append to the list until CTRL + D
         item_list.append(item)
 
-# use 'Counter' to count the occurance of each itme in the list
+# use 'Counter' to count the occurance of each item in the list
 # convert it into a dict, store both value and occurance (we need both the values, hence dict)
 # sort the dict using keys on dict.items, sorted returns a list
 # convert it into a dict again
