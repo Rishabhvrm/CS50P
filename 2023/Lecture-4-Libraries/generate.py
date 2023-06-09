@@ -44,7 +44,3 @@ print('hello, my name is', sys.argv[1])
 
 #  ------------------------------------------------------------------------------
 
-# PACKAGE
-
-# PyPI - Python Package Index: package website
-# pip - package manager (download, unzip, put in proper location)

@@ -1,0 +1,10 @@
+# PACKAGE
+
+# PyPI - Python Package Index: package website
+# pip - package manager (download, unzip, put in proper location)
+
+import cowsay
+import sys
+
+if len(sys.argv) == 2:
+    cowsay.cow("hello, " + sys.argv[1])
