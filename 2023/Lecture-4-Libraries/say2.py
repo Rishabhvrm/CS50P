@@ -4,4 +4,4 @@ import sys
 
 from sayings import hello
 
-print(hello('dude'))
+hello('dude')
