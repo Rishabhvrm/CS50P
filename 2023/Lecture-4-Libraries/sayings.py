@@ -9,5 +9,9 @@ def goodbye(name):
     print(f'goodbye, {name}')
 
 
-if __name__ == __main__:
-    
+# Instead of calling 'main' like this
+# main()
+
+# use this
+if __name__ == "__main__":
+    main()
