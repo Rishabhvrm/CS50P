@@ -15,3 +15,6 @@ def goodbye(name):
 # use this
 if __name__ == "__main__":
     main()
+
+# __name__ 's  default value is 'main' when you run a file from command line
+# hence it will not be called when called while importing in another file becuase its defualt value won't be 'main'
