@@ -6,7 +6,10 @@ import random
 figlet = Figlet()
 fonts = figlet.getFonts()
 
-str = input()
+if len(sys.argv) == 1 or len(sys.argv) == 3:
+    print('y')
+else:
+    print('n')
 # if second_arg isEmpty():
 #     font = random.choice(fonts)
 
