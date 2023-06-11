@@ -1,3 +1,3 @@
 import emoji
 
-print('python is :thumbs_up:')
+print(emoji.emojize('python is :thumbs_up:'))
