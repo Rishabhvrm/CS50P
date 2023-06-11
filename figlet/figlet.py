@@ -8,9 +8,9 @@ fonts = figlet.getFonts()
 
 if len(sys.argv) == 1 or len(sys.argv) == 3:
     print('y')
-    
+    # check input conditions
     if sys.argv[1] not in ['-f','--font'] or sys.argv[2] not in fonts:
-        sys.exit('Check the command line inputs')
+        sys.exit('Invalid usage')
 
     # set font based on given font or randomly
     # if len(sys.argv) == 3:
@@ -23,8 +23,5 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
     figlet.setFont(font)            # set font
     str = input()                   # input user string
     print(figlet.renderText(str))   # print output
-
-
-# if second_arg isEmpty():
-#     font = random.choice(fonts)
-
+else:
+    sys.exit('Invalid usage')
