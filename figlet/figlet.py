@@ -1,4 +1,5 @@
 from pyfiglet import Figlet
+import pyfiglet
 import sys
 import random
 
@@ -21,8 +22,12 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
     font = sys.argv[2] if len(sys.argv) == 3 else random.choice(fonts)
     print(font)
 
-    figlet.setFont(font)            # set font
+    # figlet.setFont(font)            # set font
     str = input()                   # input user string
-    print(figlet.renderText(str))   # print output
+    # print(figlet.renderText(str))   # print output
+
+    output = pyfiglet.figlet_format(str, font = font)
+    print(output)
+
 else:
     sys.exit('Invalid usage')
