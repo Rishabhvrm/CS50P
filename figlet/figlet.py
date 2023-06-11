@@ -19,6 +19,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
     #     font = random.choice(fonts)
 
     font = sys.argv[2] if len(sys.argv) == 3 else random.choice(fonts)
+    print(font)
 
     figlet.setFont(font)            # set font
     str = input()                   # input user string
