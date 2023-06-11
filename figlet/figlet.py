@@ -1,9 +1,12 @@
-import pyfiglet
+from pyfiglet import Figlet
+import sys
+import random
 
-o = pyfiglet.figlet_format('hello')
-print(o)
+# create figlet instance
+figlet = Figlet()
+fonts = figlet.getFonts()
 
-import pyfiglet
+str = input()
+# if second_arg isEmpty():
+#     font = random.choice(fonts)
 
-result = pyfiglet.figlet_format("Geeks For Geeks", font = 'slant')
-print(result)
