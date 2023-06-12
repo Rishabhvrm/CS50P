@@ -9,4 +9,6 @@ print(number)
 
 guess = input('Guess: ')
 
-output = 'Large' if guess < number else 
+output = 'just right' if guess == number else 'large' if guess > number else 'small'
+
+print(output)
