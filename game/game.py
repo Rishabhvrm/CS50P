@@ -9,4 +9,4 @@ print(number)
 
 guess = input('Guess: ')
 
-output = '
+output = 'Large' if guess < number else 
