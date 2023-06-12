@@ -7,8 +7,11 @@ while True:
     except ValueError:
         pass
     else:
-        number = random.randint(1,n)        # choose a random number inclusive of the parameters
-        break
+        if n <= 0:                              # prompt again for negative numbers
+            pass
+        elif n > 0:
+            number = random.randint(1,n)        # choose a random number inclusive of the parameters
+            break
 
 # looping until user enter integer
 while True:
