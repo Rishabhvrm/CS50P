@@ -20,13 +20,4 @@ while True:
         if guess == number:
             print('Just right!')
             break
-        print('Too large!' if guess > number else 'Too small!')
-
-        # if guess < number:
-        #     print('Too small!')
-        # elif guess > number:
-        #     print('Too large!')
-        # elif guess == number:
-        #     print('Just right!')
-        #     break
-
+        print('Too large!' if guess > number else 'Too small!')     # using ternary with print
