@@ -6,9 +6,14 @@ n = int(input('Level: '))
 number = random.randint(1,n)
 print(number)
 
+while True:
+    guess = int(input('Guess: '))
 
-guess = int(input('Guess: '))
+    if guess < number:
+        print('Too small!')
+    elif guess > number:
+        print('Too large!')
+    elif guess == number:
+        print('Just right!')
+        break
 
-output = 'just right' if guess == number else 'large' if guess > number else 'small'
-
-print(output)
