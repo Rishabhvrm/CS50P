@@ -1,19 +1,32 @@
 import random
 
-n = int(input('Level: '))
-
-# choose a random number inclusive of the parameters
-number = random.randint(1,n)
-print(number)
-
+# looping until user enters integer
 while True:
-    guess = int(input('Guess: '))
-
-    if guess < number:
-        print('Too small!')
-    elif guess > number:
-        print('Too large!')
-    elif guess == number:
-        print('Just right!')
+    try:
+        n = int(input('Level: '))
+    except ValueError:
+        pass
+    else:
+        number = random.randint(1,n)        # choose a random number inclusive of the parameters
         break
+
+# looping until user enter integer
+while True:
+    try:
+        guess = int(input('Guess: '))
+    except ValueError:
+        pass
+    else:
+        if guess == number:
+            print('Just right!')
+            break
+        print('Too large!' if guess > number else 'Too small!')
+
+        # if guess < number:
+        #     print('Too small!')
+        # elif guess > number:
+        #     print('Too large!')
+        # elif guess == number:
+        #     print('Just right!')
+        #     break
 
