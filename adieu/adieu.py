@@ -14,4 +14,4 @@ while True:
 # join words into a list using inflect
 p = inflect.engine()
 print()
-print(p.join(names))
+print("Adieu, adieu, to", p.join(names))
