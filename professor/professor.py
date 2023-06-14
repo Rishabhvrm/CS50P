@@ -11,7 +11,7 @@ def get_level():
         except ValueError:
             pass
         else:
-            if level > 3 or level < 0:
+            if level > 3 or level < 1:
                 pass
             else:
                 return level
