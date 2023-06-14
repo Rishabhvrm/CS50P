@@ -13,7 +13,8 @@ def get_level():
         else:
             if level > 3 or level < 0:
                 pass
-            
+            else:
+                
             return level
 
 
