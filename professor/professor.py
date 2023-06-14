@@ -9,6 +9,7 @@ def get_level():
         try:
             level = int(input("Level: "))
         except ValueError or level > 3 or level < 0:
+            print('trueeeeee')
             pass
         else:
             return level
