@@ -3,9 +3,11 @@ import random
 def main():
     level = get_level()
     print(level)
+    int = generate_integer(level)
+    
 
 # get levels. 1, 2, 3 only
-# prompt avai
+# prompt again if user enters anything other than 1, 2, 3
 def get_level():
     while True:
         try:
