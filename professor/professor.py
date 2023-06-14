@@ -4,6 +4,8 @@ def main():
     level = get_level()
     print(level)
 
+# get levels. 1, 2, 3 only
+# prompt avai
 def get_level():
     while True:
         try:
