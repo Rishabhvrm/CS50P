@@ -14,8 +14,7 @@ def get_level():
             if level > 3 or level < 0:
                 pass
             else:
-                
-            return level
+                return level
 
 
 def generate_integer():
