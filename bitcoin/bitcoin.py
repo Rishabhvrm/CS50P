@@ -24,6 +24,6 @@ try:
 except requests.RequestException:
     sys.exit('Error Occurred')
 
-print(json.dumps(r.json(), indent = 2))
-json_o = r.json
-print(json_o.)
+# print(json.dumps(r.json(), indent = 2))
+json_o = r.json()
+print(float(json_o["bpi"]["USD"]["rate"]) * n)
