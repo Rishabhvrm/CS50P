@@ -12,7 +12,7 @@ def main():
     strike_counter = 0
 
     # run for 10 steps
-    for step in range(5):
+    for step in range(10):
         a, b = generate_integer(level)
         result = a + b
         for strike in range(3):
