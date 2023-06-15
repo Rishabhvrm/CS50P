@@ -41,13 +41,12 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
+            if level > 3 or level < 1:      # if user enters level other than 1, 2 or 3
+                raise ValueError
         except ValueError:
             pass                            # is user enters a string
         else:
-            if level > 3 or level < 1:      # if user enters level other than 1, 2 or 3
-                pass
-            else:
-                return level
+            return level
 
 
 def generate_integer(level):
