@@ -11,7 +11,7 @@ def main():
     step = 0
 
     # run for 10 steps
-    for step in range(10):
+    for step in range(5):
         a, b = generate_integer(level)
         result = a + b
         for strike in range(3):
