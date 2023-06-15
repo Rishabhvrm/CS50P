@@ -4,8 +4,7 @@ def main():
 
     level = get_level()
     print(level)
-    a, b = generate_integer(level)
-    result = a + b
+
 
     strike = 0
     score = 0
@@ -13,6 +12,8 @@ def main():
 
     # run for 10 steps
     for step in range(10):
+        a, b = generate_integer(level)
+        result = a + b
         for strike in range(3):
             try:
                 step += 1
@@ -27,6 +28,8 @@ def main():
             except ValueError:
                 print('EEE')
                 strike += 1
+        if strike == 3:
+            print(result)
 
 
 
