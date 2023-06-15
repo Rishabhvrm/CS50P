@@ -11,7 +11,7 @@ def main():
     score = 0
 
     for strike in range(3):
-        guess = input(f'{a} + {b} = ')
+        guess = int(input(f'{a} + {b} = '))
         if guess != result:
             print('EEE')
             strike += 1
