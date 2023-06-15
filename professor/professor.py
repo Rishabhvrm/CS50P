@@ -9,20 +9,25 @@ def main():
 
     strike = 0
     score = 0
+    step = 0
 
-    for strike in range(3):
-        try:
-            guess = int(input(f'{a} + {b} = '))
-            if guess != result:
+    # run for 10 steps
+    for step in range(10):
+        for strike in range(3):
+            try:
+                step += 1
+                guess = int(input(f'{a} + {b} = '))
+                if guess != result:
+                    print('EEE')
+                    strike += 1
+                else:
+                    # guess is equal to result
+                    score += 1
+                    break
+            except ValueError:
                 print('EEE')
                 strike += 1
-            else:
-                # guess is equal to result
-                score += 1
-                break
-        except ValueError:
-            print('EEE')
-            strike += 1
+
 
 
     print(f'strike = {strike}')
