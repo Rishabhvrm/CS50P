@@ -9,6 +9,7 @@ def main():
     strike = 0
     score = 0
     step = 0
+    strike_counter = 0
 
     # run for 10 steps
     for step in range(5):
@@ -20,6 +21,7 @@ def main():
                 if guess != result:
                     print('EEE')
                     strike += 1
+                    strike_counter += 1
                 else:
                     # guess is equal to result
                     score += 1
@@ -27,12 +29,13 @@ def main():
             except ValueError:
                 print('EEE')
                 strike += 1
+                strike_counter += 1
         if strike == 3:
             print(f'strike: {strike}')
             print(f'{a} + {b} = {result}')
         step += 1
 
-    print(f'strike = {strike}')
+    print(f'strike_counter = {strike_counter}')
     print(f'score = {score}')
 
 
