@@ -11,18 +11,19 @@ def main():
     score = 0
 
     for strike in range(3):
-        guess = int(input(f'{a} + {b} = '))
         try:
+            guess = int(input(f'{a} + {b} = '))
             if guess != result:
                 print('EEE')
                 strike += 1
+            else:
+                # guess is equal to result
+                score += 1
+                break
         except ValueError:
             print('EEE')
             strike += 1
-        else:
-            # guess is equal to result
-            score += 1
-            break
+
 
     print(f'strike = {strike}')
     print(f'score = {score}')
