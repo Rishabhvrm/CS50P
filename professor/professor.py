@@ -3,7 +3,9 @@ import random
 def main():
     level = get_level()
     print(level)
-    int = generate_integer(level)
+    a, b = generate_integer(level)
+    result = a
+    print(f'{a} + {b} = {a+b}')
 
 
 # get levels. 1, 2, 3 only
@@ -23,10 +25,12 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        a, b = random.randint(0,9), randint(0, 9)
+        a, b = random.randint(0, 9), random.randint(0, 9)
     elif level == 2:
         a, b = random.randint(10, 99), random.randint(10, 99)
-    pass
+    elif level == 3:
+        a, b = random.randint(100, 999), random.randint(100, 999)
+    return a, b
 
 if __name__ == "__main__":
     main()
