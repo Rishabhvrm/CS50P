@@ -21,7 +21,6 @@ def main():
                 if guess != result:
                     print('EEE')
                     strike += 1
-                    strike_counter += 1
                 else:
                     # guess is equal to result
                     score += 1
@@ -29,10 +28,10 @@ def main():
             except ValueError:
                 print('EEE')
                 strike += 1
-                strike_counter += 1
         if strike == 3:
             print(f'strike: {strike}')
             print(f'{a} + {b} = {result}')
+            strike_counter += 1
         step += 1
 
     print(f'strike_counter = {strike_counter}')
