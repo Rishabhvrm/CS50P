@@ -34,8 +34,8 @@ def main():
             strike_counter += 1
         step += 1
 
-    print(f'strike_counter = {strike_counter}')
-    print(f'score = {score}')
+    # print(f'strike_counter = {strike_counter}')
+    print(f'Score = {score}')
 
 
 # get levels. 1, 2, 3 only
