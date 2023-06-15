@@ -3,13 +3,13 @@ import random
 def main():
     # input level
     level = get_level()
-    strike, score, step = 0, 0, 0
-    strike_counter = 0                                  # not necessary though
+    strike, score = 0, 0
+    # strike_counter = 0                                # not necessary though
 
-    for step in range(10):                              # run for 10 steps
+    for _ in range(10):                                 # run for 10 steps
         a, b = generate_integer(level)
         result = a + b
-        for strike in range(3):                         # maximum three strikes for wrong answer
+        for _ in range(3):                              # maximum three strikes for wrong answer
             try:
                 guess = int(input(f'{a} + {b} = '))
                 if guess != result:                     # print error and increase strike
@@ -27,10 +27,9 @@ def main():
             # print(f'strike: {strike}')
             print(f'{a} + {b} = {result}')              # print correct answer after 3 wrong answers
             # strike_counter += 1
-        # step += 1
 
     # print(f'strike_counter = {strike_counter}')
-    print(f'Score = {score}')
+    print(f'Score = {score}')                           # print final output
 
 
 # get levels. 1, 2, 3 only
