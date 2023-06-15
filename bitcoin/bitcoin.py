@@ -5,6 +5,7 @@ import sys
 # Call api and check the price, handle exceptions
 # outputs cost of n bitcoins in USD using thousand ,(comma separator) upto 4 digit decimal
 
+# check length of 
 if len(sys.argv) < 2:
     sys.exit('Missing command-line argument')
 
