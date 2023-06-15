@@ -7,13 +7,17 @@ def main():
     a, b = generate_integer(level)
     result = a + b
 
-    strike = 1
+    strike = 0
+    score = 0
 
-    for strike in range(3)
-    guess = input(f'{a} + {b} = ')
-    if guess != result:
-        print('EEE')
-        strike += 1
+    for strike in range(3):
+        guess = input(f'{a} + {b} = ')
+        if guess != result:
+            print('EEE')
+            strike += 1
+        else:
+            score += 1
+            break
 
 
 # get levels. 1, 2, 3 only
