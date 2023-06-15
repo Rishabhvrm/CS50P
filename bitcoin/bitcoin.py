@@ -24,6 +24,7 @@ except requests.RequestException:
 
 # print(json.dumps(r.json(), indent = 2))
 
+# json response similar to a python dictionary
 amount_string = r.json()["bpi"]["USD"]["rate"]          # get the particular key from the json response object. bpi -> USD -> rate
 amount = amount_string.replace(",", "")                 # remove the comma (,) from string response
 amount_float = float(amount) * n                        # convert string to float and multiply the input to calculate the total cost
