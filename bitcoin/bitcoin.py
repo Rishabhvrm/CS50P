@@ -26,4 +26,4 @@ except requests.RequestException:
 
 print(json.dumps(r.json(), indent = 2))
 json_o = r.json
-print(json_o["USD"])
+print(json_o."time")
