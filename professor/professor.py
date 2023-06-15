@@ -29,6 +29,7 @@ def main():
                 print('EEE')
                 strike += 1
         if strike == 3:
+            print(f'strike: {strike}')
             print(f'{a} + {b} = {result}')
 
 
