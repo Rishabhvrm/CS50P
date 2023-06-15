@@ -1,11 +1,8 @@
 import random
 
 def main():
-
+    # input level
     level = get_level()
-    print(level)
-
-
     strike = 0
     score = 0
     step = 0
@@ -45,9 +42,9 @@ def get_level():
         try:
             level = int(input("Level: "))
         except ValueError:
-            pass
+            pass                            # is user enters a string
         else:
-            if level > 3 or level < 1:
+            if level > 3 or level < 1:      # if user enters level other than 1, 2 or 3
                 pass
             else:
                 return level
