@@ -14,13 +14,18 @@ def main():
         guess = int(input(f'{a} + {b} = '))
         try:
             if guess != result:
+                print('EEE')
+                strike += 1
+        except ValueError:
             print('EEE')
             strike += 1
-        except ValueError:
-            
         else:
+            # guess is equal to result
             score += 1
             break
+
+    print(f'strike = {strike}')
+    print(f'score = {score}')
 
 
 # get levels. 1, 2, 3 only
