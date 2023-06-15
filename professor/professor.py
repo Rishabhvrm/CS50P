@@ -32,8 +32,6 @@ def main():
             print(f'strike: {strike}')
             print(f'{a} + {b} = {result}')
 
-
-
     print(f'strike = {strike}')
     print(f'score = {score}')
 
