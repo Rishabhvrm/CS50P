@@ -8,7 +8,6 @@ import sys
 if len(sys.argv < 2):
     sys.exit('Missing command-line argument')
 
-if type(sys.argv[1]) != '<class 'float'>':
+if type(sys.argv[1]) != "<class 'float'>":
     sys.exit('Command-line argument is not a number')
 
-    
