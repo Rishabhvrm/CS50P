@@ -16,7 +16,7 @@ except:
     sys.exit('Command-line argument is not a number')
 
 
-print(n)
+# print(n)
 
 try:
     # make a request
@@ -26,4 +26,8 @@ except requests.RequestException:
 
 # print(json.dumps(r.json(), indent = 2))
 json_o = r.json()
-print(float(json_o["bpi"]["USD"]["rate"]) * n)
+amount_string = json_o["bpi"]["USD"]["rate"]
+# print(amount_string)
+amount = amount_string.replace(",", "")
+amount_float = float(amount) * n
+print(f'${amount_float:,.4f}')
