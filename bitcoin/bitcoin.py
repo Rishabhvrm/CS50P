@@ -1,12 +1,13 @@
 import requests
 import sys
+import json
 
 # takes 1 command line argument as a float, sys.exit() if argument not float, missing or not a number
 # Call api and check the price, handle exceptions
 # outputs cost of n bitcoins in USD using thousand ,(comma separator) upto 4 digit decimal
 
 # check length of
-if len(sys.argv) < 2:
+if len(sys.argv) != 2:
     sys.exit('Missing command-line argument')
 
 try:
@@ -23,4 +24,6 @@ try:
 except requests.RequestException:
     sys.exit('Error Occurred')
 
-print(r.json())
+print(json.dumps(r.json(), indent = 2))
+json_o = r.json
+print(json_o["USD"])
