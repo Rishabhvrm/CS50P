@@ -1,11 +1,19 @@
 import random
 
 def main():
+
     level = get_level()
     print(level)
     a, b = generate_integer(level)
-    result = a
-    print(f'{a} + {b} = {a+b}')
+    result = a + b
+
+    strike = 1
+
+    for strike in range(3)
+    guess = input(f'{a} + {b} = ')
+    if guess != result:
+        print('EEE')
+        strike += 1
 
 
 # get levels. 1, 2, 3 only
