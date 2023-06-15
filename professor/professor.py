@@ -16,7 +16,6 @@ def main():
         result = a + b
         for strike in range(3):
             try:
-                step += 1
                 guess = int(input(f'{a} + {b} = '))
                 if guess != result:
                     print('EEE')
@@ -31,6 +30,7 @@ def main():
         if strike == 3:
             print(f'strike: {strike}')
             print(f'{a} + {b} = {result}')
+        step += 1
 
     print(f'strike = {strike}')
     print(f'score = {score}')
