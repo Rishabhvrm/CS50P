@@ -5,5 +5,10 @@ import sys
 # Call api and check the price, handle exceptions
 # outputs cost of n bitcoins in USD using thousand ,(comma separator) upto 4 digit decimal
 
-if len(sys.argv < 2)
-sys.argv[1] ! =
+if len(sys.argv < 2):
+    sys.exit('Missing command-line argument')
+
+if type(sys.argv[1]) != '<class 'float'>':
+    sys.exit('Command-line argument is not a number')
+
+    
