@@ -16,6 +16,8 @@ def main():
             if guess != result:
             print('EEE')
             strike += 1
+        except ValueError:
+            
         else:
             score += 1
             break
