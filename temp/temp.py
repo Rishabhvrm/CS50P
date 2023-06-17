@@ -9,5 +9,7 @@ print(type(12.3))
 n = '123.12'
 print(float(n))
 
-m = '1,000.123'
-print(float(m))
+# m = '1,000.123'
+# print(float(m))
+
+print('adding just a line to check with github')
