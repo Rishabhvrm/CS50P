@@ -18,7 +18,7 @@ def main():
 # much simpler and cleaner (no if's)
 
 def test_square_2():
-    assert square(2) == 4
+    assert square(2) == 4           # will raise AssertionError if test failed
     assert square(3) == 9
 
 
