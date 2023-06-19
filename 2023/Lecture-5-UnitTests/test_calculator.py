@@ -18,8 +18,14 @@ def main():
 # much simpler and cleaner (no if's)
 
 def test_square_2():
-    assert square(2) == 4           # will raise AssertionError if test failed
-    assert square(3) == 9
+    try:
+        assert square(2) == 4           # will raise AssertionError if test failed
+    except AssertionError:
+        print("2 squared was not 4")
+    try:
+        assert square(3) == 9
+    except AssertionError:
+        print("3 squared was not 9")
 
 
 if __name__ == "__main__":
