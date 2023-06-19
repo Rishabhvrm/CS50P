@@ -3,7 +3,7 @@ def main():
     print("x squared is", square(x))
 
 def square(n):
-    return n * n
+    return n * 1
 
 # do this proactively to make sure that main is only called when this particular file
 # is being run through cmd.
