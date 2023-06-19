@@ -3,4 +3,9 @@
 
 from calculator import square
 
-def
+def test_square():
+    assert square(2) == 4
+    assert square(2) == 4
+    assert square(2) == 4
+    assert square(2) == 4
+    assert square(2) == 4
