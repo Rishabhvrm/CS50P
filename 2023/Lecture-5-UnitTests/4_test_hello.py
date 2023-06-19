@@ -1,12 +1,8 @@
-def main():
-    test_default()
-    test_argument()
+from 3_hello import hello
 
 def test_default():
-    assert() == "hello, world"
+    assert hello() == "hello, world"
 
 def test_argument():
-    assert("david") == "hello, david"
+    assert hello("david") == "hello, david"
 
-if __name__ == "__main__":
-    main()
