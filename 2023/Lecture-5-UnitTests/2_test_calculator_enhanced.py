@@ -23,6 +23,7 @@ def test_negative():
 def test_zero():
     assert square(0) == 0
 
+# making sure that a TypeError will be raised when something like 'cat' is passed as input
 def test_str():
     with pytest.raises(TypeError):
         square("cat")
