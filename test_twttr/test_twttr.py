@@ -1,1 +1,4 @@
-from twttr import
+from twttr import shorten
+
+def check 
+assert
