@@ -1,7 +1,7 @@
 from plates import is_valid
 
 
-def test_starts_with_two_letters():
+def test_alpha_numeric():
     assert is_valid("CS50") == True
 
 def test_max_length():
