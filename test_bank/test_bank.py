@@ -1,7 +1,7 @@
 from bank import value
 
 def test_uppercase():
-    assert value('HELLO') == 0
+    assert value("HELLO") == 0
 
 def test_lowercase():
     assert value("hello") == 0
