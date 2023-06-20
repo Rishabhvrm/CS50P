@@ -24,3 +24,9 @@ def test_num_middle():
 
 def test_punctuation():
     assert is_valid("A.A") == False
+
+def test_starts_with_number():
+    assert is_valid("50CS") == False
+
+def test_all_num():
+    assert is_valid("1234") == False
