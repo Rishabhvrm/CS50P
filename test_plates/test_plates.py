@@ -35,4 +35,4 @@ def test_first_num():
     assert is_valid("CS05") == False
 
 def test_numeric():
-    assert is_valid("50") == True
+    assert is_valid("50") == False
