@@ -17,3 +17,6 @@ def test_string():
 
 def test_number():
     assert shorten('123a45') == '12345'
+
+def test_punctuation():
+    assert shorten('Bond, James)
