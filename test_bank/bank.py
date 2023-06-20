@@ -3,9 +3,9 @@ def main():
     print(f'${value(greeting.lower())}')
 
 def value(greeting):
-    if greeting[0] == "hello":
+    if greeting.startswith("hello"):
         return 0
-    elif greeting[0].startswith() == "h":
+    elif greeting.startswith("h"):
         return 20
     else: return 100
 
