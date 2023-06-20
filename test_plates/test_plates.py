@@ -1,8 +1,8 @@
 from plates import is_valid
 
 
-def test_alpha_numeric():
-    assert is_valid("CS50") == True
+def test_min_two_chars():
+    assert is_valid("CSP50") == True
 
 def test_string():
     assert is_valid("hello, world") == False
@@ -23,7 +23,7 @@ def test_num_end():
     assert is_valid("AAA222") == True
 
 def test_num_middle():
-    assert is_valid("AAA22A") == False
+    assert is_valid("CS50P") == False
 
 def test_punctuation():
     assert is_valid("A.A") == False
@@ -39,3 +39,6 @@ def test_first_num_zero():
 
 def test_numeric():
     assert is_valid("50") == False
+
+def test_aplha_numeric():
+    assert is_valid("PI3.14") == False
