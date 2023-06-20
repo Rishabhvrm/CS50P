@@ -4,6 +4,9 @@ from plates import is_valid
 def test_alpha_numeric():
     assert is_valid("CS50") == True
 
+def test_string():
+    assert is_valid("hello, world") == False
+
 def test_max_length():
     assert is_valid("ABCDEF") == True
 
@@ -31,7 +34,7 @@ def test_starts_with_number():
 def test_all_num():
     assert is_valid("1234") == False
 
-def test_first_num():
+def test_first_num_zero():
     assert is_valid("CS05") == False
 
 def test_numeric():
