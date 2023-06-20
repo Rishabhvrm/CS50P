@@ -14,3 +14,6 @@ def test_nil():
 
 def test_string():
     assert shorten('this string has vowels') == 'ths strng hs vwls'
+
+def test_number():
+    assert shorten('123a45') == '12345'
