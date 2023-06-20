@@ -1,4 +1,5 @@
 def main():
+    word = input()
     print(shorten(word))
 
 user_input = input("Input: ")
