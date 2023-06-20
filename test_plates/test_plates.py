@@ -17,6 +17,7 @@ def test_min_length_false():
     assert is_valid("C") == False
 
 def test_num_end():
+    assert is_valid("AAA22") == True
 
 def test_num_middle():
     assert is_valid("A2AA") == False
