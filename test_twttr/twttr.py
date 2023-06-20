@@ -3,7 +3,8 @@ def main():
     print("Output:", shorten(word))
 
 def shorten(word):
-    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    # vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    vowels = ['A', 'E', 'I', 'O', 'U']
     output = []
     for _ in word:
         if _ not in vowels:
