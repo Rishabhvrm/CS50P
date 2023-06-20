@@ -1,6 +1,6 @@
 def main():
     greeting = input("Greeting: ")
-    print(f'${value(greeting.lower())}')
+    print(f'${value(greeting.strip().lower())}')
 
 def value(greeting):
     if greeting.startswith("hello"):
