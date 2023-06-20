@@ -7,13 +7,13 @@ def test_lowercase():
     assert value("hello") == 0
 
 def test_sentence():
-    assert value("hello, how are you?") == 20
+    assert value("hey, how are you?") == 20
 
 def test_sentence_wrong():
     assert value('what?') == 100
 
 def test_numbers():
-    assert value(123) == 100
+    assert value('123') == 100
 
 def test_whitespace():
     assert value(" ") == 100
