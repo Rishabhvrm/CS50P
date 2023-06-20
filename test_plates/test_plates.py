@@ -17,10 +17,10 @@ def test_min_length_false():
     assert is_valid("C") == False
 
 def test_num_end():
-    assert is_valid("AAA22") == True
+    assert is_valid("AAA222") == True
 
 def test_num_middle():
-    assert is_valid("A2AA") == False
+    assert is_valid("AAA22A") == False
 
 def test_punctuation():
     assert is_valid("A.A") == False
@@ -30,3 +30,9 @@ def test_starts_with_number():
 
 def test_all_num():
     assert is_valid("1234") == False
+
+def test_first_num():
+    assert is_valid("CS05") == False
+
+def test_numeric():
+    assert is_valid("50") == True
