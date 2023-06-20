@@ -17,3 +17,6 @@ def test_whitespace():
 
 def test_punctuation():
     assert value(",.") == 100
+
+def test_case_insensitive():
+    assert value("Hello, HOW ARE YOU") == 0
