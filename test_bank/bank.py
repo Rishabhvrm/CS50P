@@ -1,6 +1,6 @@
 def main():
     greeting = input("Greeting: ")
-    print(f'${value(greeting)}')
+    print(f'${value(greeting.lower())}')
 
 def value(greeting):
     if greeting == "hello":
