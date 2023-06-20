@@ -2,7 +2,7 @@ from plates import is_valid
 
 
 def test_min_two_chars():
-    assert is_valid("PI3.14") == False
+    assert is_valid("PI314") == False
 
 def test_string():
     assert is_valid("hello, world") == False
