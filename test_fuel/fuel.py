@@ -1,9 +1,10 @@
 def main():
     while True:
-        fraction = input("Fraction: ").strip()
-        fraction = convert(fraction)
-        print(gauge(fraction))
-        break
+        try:
+            fraction = input("Fraction: ").strip()
+            fraction = convert(fraction)
+            print(gauge(fraction))
+            break
 
 def convert(fraction):
     # convert in percentage
@@ -13,12 +14,10 @@ def convert(fraction):
     if x > y or isinstance(x, int) or isinstance(y, int):
         raise ValueError
 
-    if 
+    if y == 0:
+        raise ZeroDivisionError
 
-    except(ValueError, ZeroDivisionError):
-        pass
-    else:
-        return round(100 * (x/y))
+    return round(100 * (x/y))
 
 
 def gauge(percentage):
