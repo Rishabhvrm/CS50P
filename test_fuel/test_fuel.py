@@ -7,6 +7,9 @@ def test_convert_return_correct():
 def test_convert_return_empty():
     assert convert("1/100") == 1
 
+def test_convert_return_empty2():
+    assert convert("1/99") == 1
+
 def test_convert_return_full():
     assert convert("1/1") == 100
 
