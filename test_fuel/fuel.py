@@ -14,7 +14,7 @@ def convert(fraction):
     x, y = fraction.split('/')
     x, y = int(x), int(y)
 
-    if x > y or not isinstance(x, int) or not isinstance(y, int):
+    if not isinstance(x, int) or not isinstance(y, int) or x > y:
         raise ValueError
 
     if y == 0:
