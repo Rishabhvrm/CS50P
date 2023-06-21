@@ -7,9 +7,10 @@ def main():
 
 def convert(fraction):
     # convert in percentage
-    try:
-        x, y = fraction.split('/')
-        x, y = int(x), int(y)
+    x, y = fraction.split('/')
+    x, y = int(x), int(y)
+
+    if x > y or 
 
     except(ValueError, ZeroDivisionError):
         pass
