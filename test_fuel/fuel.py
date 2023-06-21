@@ -11,10 +11,6 @@ def convert(fraction):
         x, y = fraction.split('/')
         x, y = int(x), int(y)
 
-        # prompt again if x > y
-        if (x > y):
-            continue
-
     except(ValueError, ZeroDivisionError):
         pass
     else:
