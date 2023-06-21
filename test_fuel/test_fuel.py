@@ -26,7 +26,7 @@ def test_gauge_return_full1():
     assert gauge(99) == "F"
 
 def test_convert_value_error():
-    assert convert("cat/dog") == ValueError
+    assertRaises convert("cat/dog") raise ValueError
 
 def test_gauge_return_full2():
     assert gauge(100) == "F"
