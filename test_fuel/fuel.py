@@ -3,6 +3,9 @@ def main():
         try:
             fraction = input("Fraction: ").strip()
             fraction = convert(fraction)
+        except:
+            pass
+        else:
             print(gauge(fraction))
             break
 
