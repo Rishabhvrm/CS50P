@@ -19,7 +19,7 @@ def test_gauge_return():
 def test_gauge_return_empty1():
     assert gauge(1) == "E"
 
-def test_gauge_return_empty1():
+def test_gauge_return_empty2():
     assert gauge(0) == "E"
 
 def test_gauge_return_full1():
