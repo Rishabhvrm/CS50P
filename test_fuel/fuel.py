@@ -10,7 +10,10 @@ def convert(fraction):
     x, y = fraction.split('/')
     x, y = int(x), int(y)
 
-    if x > y or 
+    if x > y or isinstance(x, int) or isinstance(y, int):
+        raise ValueError
+
+    if 
 
     except(ValueError, ZeroDivisionError):
         pass
