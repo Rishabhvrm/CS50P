@@ -14,11 +14,11 @@ def convert(fraction):
     x, y = fraction.split('/')
     x, y = int(x), int(y)
 
-    if not isinstance(x, int) or not isinstance(y, int) or x > y:
-        raise ValueError
-
     if y == 0:
         raise ZeroDivisionError
+
+    if not isinstance(x, int) or not isinstance(y, int) or x > y:
+        raise ValueError
 
     return round(100 * (x/y))
 
