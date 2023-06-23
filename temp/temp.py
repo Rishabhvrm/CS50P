@@ -1,16 +1,21 @@
 # making a temprory file
-print('temp')
+lst = [1, 3, 1, 3, 5, 1, 4, 7, 7]
+def find_duplicates(lst):
+    counter = {}
 
-for i in range(3):
-    print(i)
+    for val in lst:
+        if val not in counter:
+            counter[val] = 0
+        counter[val] += 1
 
-print(type(12.3))
+    print(counter)
 
-n = '123.12'
-print(float(n))
 
-# m = '1,000.123'
-# print(float(m))
+    result = []
+    for val, count in counter.items():
+        if count > 1:
+            result.append(val)
 
-print('adding just a line to check with github')
-print(f'{n}')
+    return result
+
+print(find_duplicates(lst))
