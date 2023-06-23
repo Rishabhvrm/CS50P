@@ -6,6 +6,7 @@ def find_duplicates(lst):
     for val in lst:
         if val not in counter:
             counter[val] = 0
+            print(counter)
         counter[val] += 1
 
     print(counter)
