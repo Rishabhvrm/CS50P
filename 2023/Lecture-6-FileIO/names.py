@@ -32,6 +32,9 @@ with open("2names.txt", "a") as file:
 #     print(f"hello, {name}")
 
 # part 5, use sorted() on file
+with open("1names.txt") as file:
+    for line in sorted(file):
+        print(f"hello, {line.rstrip()}")
 
 # -------------------------
 
