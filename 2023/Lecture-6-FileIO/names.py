@@ -22,6 +22,15 @@ with open("2names.txt", "a") as file:
 #     for line in file:
 #         print("hello,", line.rstrip())
 
+# part 4, read file and sort
+names = []
+with open("1names.txt") as file:
+    for line in file:
+        names.append(line.rstrip())
+
+for name in sorted(names):
+    print(f"hello, {name}")
+
 # -------------------------
 
 # open - like double clicking a file, second argument - what do you want to do this with file (read/write)

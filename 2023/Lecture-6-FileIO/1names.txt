@@ -1,4 +1,3 @@
-RonHarryHermioneTyler
 Durden
 Narattor
 Rupert
@@ -6,3 +5,5 @@ Emmett
 wolly
 Billy
 Duchess
+Ron
+Harry
