@@ -2,7 +2,7 @@ name = input("What's your name? ")
 
 # file = open("1names.txt", "w")    # write - it will recreate the file everytime this is called. Hence overwriting new info over old info
 file = open("1names.txt", "a")      # append
-file.write(name)
+file.write(f"{name}\n")
 file.close()    # close and save the file
 
 # -------------------------
