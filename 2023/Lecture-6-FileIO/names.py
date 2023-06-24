@@ -11,4 +11,4 @@ print(names)
 
 # -------------------------
 
-open - like double clicking a file
+# open - like double clicking a file
