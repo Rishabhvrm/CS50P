@@ -14,5 +14,5 @@ home = input("Home: ")
 
 # Part B - using DictWriter
 with open("6students.csv", "a") as file:
-    writer = csv.DictWriter(file, fieldnames = ["name", "home"])
+    writer = csv.DictWriter(file, fieldnames = ["name", "home"])  # order of columns
     writer.writerow({"name": name, "home": home}) # provide a dictionary
