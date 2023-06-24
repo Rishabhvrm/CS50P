@@ -1,6 +1,17 @@
 students = []
 
+# read csv and sort while reading the file
 with open("3students.csv") as file:
    for line in file:
       name, house = line.rstrip().split(",")
-      students.append(f"{name} is in {house}")
+      student = {}
+      student['name'] = name
+      student['house'] = house
+      students.append(student)
+
+print(students)
+
+
+
+
+# read csv and sort while reading the file
