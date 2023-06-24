@@ -11,16 +11,20 @@ file.close()    # close and save the file
 with open("2names.txt", "a") as file:
     file.write(f"{name}\n")
 
-# part 3, read file
+# part 3, read file, rstrip
+# with open("1names.txt", "r") as file:
+#     lines = file.readlines()
+
+# for line in lines:
+#     print("hello", line.rstrip())
 
 with open("1names.txt", "r") as file:
-    lines = file.readlines()
-
-for line in lines:
-    print("hello", line.rstrip())
+    for line in file:
+        print("hello,", line.rstrip())
 
 # -------------------------
 
 # open - like double clicking a file, second argument - what do you want to do this with file (read/write)
 # returns a file handle - allows us to access a file
 # use 'with' - no need to close explicitly, more pythonic
+# rstrip - strip the string
