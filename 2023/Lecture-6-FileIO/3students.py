@@ -1,2 +1,4 @@
-with open("3students.py") as file:
-    
+with open("3students.csv") as file:
+   for line in file:
+      row = line.rstrip().split(",")
+      print(f"{row[0]} is in {row[1]}")
