@@ -7,3 +7,8 @@ for name in sorted(names):
     print(f"hello, {name}")
 
 print(names)
+
+
+# -------------------------
+
+open - like double clicking a file
