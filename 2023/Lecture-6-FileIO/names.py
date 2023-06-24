@@ -18,9 +18,9 @@ with open("2names.txt", "a") as file:
 # for line in lines:
 #     print("hello", line.rstrip())
 
-with open("1names.txt", "r") as file:
-    for line in file:
-        print("hello,", line.rstrip())
+# with open("1names.txt", "r") as file:   # don't need to specify r explicitly, it's default
+#     for line in file:
+#         print("hello,", line.rstrip())
 
 # -------------------------
 
