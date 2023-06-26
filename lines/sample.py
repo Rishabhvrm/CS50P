@@ -1,5 +1,6 @@
 # first line
-second line
+# second line
+
 ''' doc string '''
 def even(n):
     return n % 2 == 0
@@ -7,3 +8,4 @@ def even(n):
 i = input('enter: ')
 print(i.strip())
 print(i.rstrip())
+ 
