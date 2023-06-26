@@ -19,6 +19,4 @@ try:
 except FileNotFoundError:
     sys.exit('File does not exist')
 
-
-
 print(count)
