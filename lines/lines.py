@@ -1,4 +1,12 @@
+import sys
+
 count = 0
+
+if len(argv > 2):
+    
+
+if not argv[1].endswith('.py'):
+    sys.exit('Not a Python file')
 
 with open('sample.py') as file:
     for line in file:
