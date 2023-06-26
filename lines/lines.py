@@ -13,15 +13,12 @@ if not sys.argv[1].endswith('.py'):
 
 
 try:
-    with open('sample.py') as file:
-        print(line)
+    with open(sys.argv[1]) as file:
+        for line in file:
+            if not line.startswith('#') and line.strip() != "": count += 1
 except FileNotFoundError:
     sys.exit('File does not exist')
-else:
-    for line in file:
-        if not line.startswith('#') and line.strip() != "":
-            print('start' + line + 'end')
-            count += 1
+
 
 
 print(count)
