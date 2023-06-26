@@ -2,7 +2,9 @@ count = 0
 
 with open('sample.py') as file:
     for line in file:
-        if line.startswith('#') or line.strip != "":
+        if line.startswith('#') or line.strip == "":
+            pass
+        else:
             print('start' + line + 'end')
             count += 1
 
