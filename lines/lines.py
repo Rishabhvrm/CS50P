@@ -15,7 +15,10 @@ count = 0
 try:
     with open(sys.argv[1]) as file:
         for line in file:
-            if not line.startswith('#') and line.strip() != "": count += 1
+            if line.startswith('#') or line.strip() == "":
+                pass
+            else:
+                count += 1
 except FileNotFoundError:
     sys.exit('File does not exist')
 
