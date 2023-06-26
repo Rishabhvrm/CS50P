@@ -1,7 +1,6 @@
 import sys
 
-count = 0
-
+# cmd line argument checks
 if len(sys.argv) < 2:
     sys.exit('Too few command-line arguments')
 
@@ -12,6 +11,7 @@ if not sys.argv[1].endswith('.py'):
     sys.exit('Not a Python file')
 
 
+count = 0
 try:
     with open(sys.argv[1]) as file:
         for line in file:
