@@ -8,4 +8,3 @@ def even(n):
 i = input('enter: ')
 print(i.strip())
 print(i.rstrip())
- 
