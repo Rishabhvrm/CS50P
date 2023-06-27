@@ -1,5 +1,6 @@
 import sys
 import csv
+from tabulate import tabulate
 
 # cmd line argument checks
 if len(sys.argv) < 2:
@@ -22,8 +23,11 @@ with open(sys.argv[1]) as file:
             row.append(small)
             row.append(large)
             pizza_row.append(row)
-            print(pizza_row)
-
+            # print(pizza_row)
             # print(tabulate(table, headers, tablefmt='plain'))
     except FileNotFoundError:
         sys.exit('File does not exist')
+    else:
+        headers = pizza_row[0]
+        table = pizza_row[1:]
+        print(tabulate(table, headers, tablefmt="grid"))
