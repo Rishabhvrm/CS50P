@@ -23,5 +23,6 @@ try:
 except FileNotFoundError:
     sys.exit(f'Could not read {sys.argv[1]}')
 else:
-    with open(sys.argv[2], "a") as file:
+    with open(sys.argv[2], "a") as csvfile:
+        fieldnames = ['first', 'last', 'house']
         writer = csv.Dict
