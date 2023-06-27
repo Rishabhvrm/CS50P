@@ -10,6 +10,8 @@ if len(sys.argv) > 3:
 
 try:
     with open(sys.argv[1]) as file:
+        reader = csv.DictReader(file)
+        print(reader)
 
 except FileNotFoundError:
-    sys.exit(')
+    sys.exit(f'Could not read {sys.argv[1]}')
