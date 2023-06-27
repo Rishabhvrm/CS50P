@@ -15,6 +15,8 @@ with open(sys.argv[1]) as file:
     try:
         reader = csv.DictReader(file)
         for row in reader:
-            print(tabulate(table, headers, tablefmt='plain'))
+            print(row.items())
+
+            # print(tabulate(table, headers, tablefmt='plain'))
     except FileNotFoundError:
         sys.exit('File does not exist')
