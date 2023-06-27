@@ -11,11 +11,18 @@ if len(sys.argv) > 2:
 if not sys.argv[1].endswith('.csv'):
     sys.exit('Not a CSV file')
 
+pizza_row = []
+
 with open(sys.argv[1]) as file:
     try:
-        reader = csv.DictReader(file)
-        for row in reader:
-            print(row.items())
+        reader = csv.reader(file)
+        for pizza, small, large in reader:
+            row = []
+            row.append(pizza)
+            row.append(small)
+            row.append(large)
+            pizza_row.append(row)
+            print(pizza_row)
 
             # print(tabulate(table, headers, tablefmt='plain'))
     except FileNotFoundError:
