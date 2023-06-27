@@ -13,13 +13,15 @@ if not sys.argv[1].endswith('.csv'):
 if not sys.argv[2].endswith('.csv'):
     sys.exit(f'{sys.argv[2]} is not a valid CSV file')
 
-students =
+students = []
 try:
     with open(sys.argv[1]) as file:
         reader = csv.DictReader(file)
         print(reader)
         for row in reader:
-            students.append({name: row['name'], house: row['house']})
-
+            students.append({'name': row['name'], 'house': row['house']})
 except FileNotFoundError:
     sys.exit(f'Could not read {sys.argv[1]}')
+else:
+    with open(sys.argv[2], "a") as file:
+        writer = csv.Dict
