@@ -38,7 +38,8 @@ else:
 # -------------------------------------------------------------------------------------------------------------------------------------
 # https://cs50.harvard.edu/python/2022/psets/6/scourgify/
 
-
+# https://docs.python.org/3/library/csv.html#csv.DictReader
+# https://docs.python.org/3/library/csv.html#csv.DictWriter.writeheader
 
 # Data, too, often needs to be “cleaned,” as by reformatting it, so that values are in a consistent, if not more convenient, format. Consider, for instance, this CSV file of students, before.csv, below:
 # Even though each “row” in the file has three values (last name, first name, and house), the first two are combined into one “column” (name), escaped with double quotes, with last name and first name separated by a comma and space. Not ideal if Hogwarts wants to send a form letter to each student, as via mail merge, since it’d be strange to start a letter with:
