@@ -17,7 +17,7 @@ except:
 else:
     valid_extensions = ['.jpg', '.jpeg', '.png']
     if extension1 not in valid_extensions or extension2 not in valid_extension:
-        print('------' + extension1 + extension2)
+        print('------' + extension1 + '-----' + extension2)
         sys.exit('Invalid output')
     if extension1 != extension2:
         sys.exit('Input and output have different extensions')
