@@ -1,5 +1,6 @@
 import sys
 from PIL import Image
+from PIL import ImageOps
 
 def main():
     validations()
@@ -12,9 +13,11 @@ def main():
 
         muppet = Image.open(sys.argv[1])
         shirt = Image.open('shirt.png')
+
         muppet_size = muppet.size
         shirt_size = muppet_size
 
+        ImageOps.fit(shirt, muppet_size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))[muppet]
 
         muppet.paste(shirt, shirt)
 
