@@ -21,11 +21,11 @@ def main():
 
 def validations():
     if len(sys.argv) < 3:
-        sys.exit('Too few command-line arguments ')
+        sys.exit('Too few command-line arguments')
 
     if len(sys.argv) > 3:
         sys.exit('Too many command-line arguments')
-
+_, extension1 = os.path.splitext(sys.argv[1])
     try:
         _, extension1 = os.path.splitext(sys.argv[1])
         _, extension2 = os.path.splitext(sys.argv[2])
