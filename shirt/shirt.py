@@ -10,11 +10,11 @@ def main():
             # image = Image.open(arg)
             images.append(arg)
 
-        muppet = Image.open[sys.argv[1]]
+        muppet = Image.open(sys.argv[1])
         shirt = Image.open('shirt.png')
         muppet.paste(shirt, shirt)
 
-        muppent.save('after1.jpg')
+        muppet.save('after1.jpg')
     except FileNotFoundError:
         sys.exit('Input does not exist')
 
