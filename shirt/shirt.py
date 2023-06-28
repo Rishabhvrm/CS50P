@@ -18,9 +18,10 @@ def main():
         shirt_size = shirt.size
 
         # resize input to the size of shirt
-        ImageOps.fit(muppet, shirt_size, method=PIL.Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+        ImageOps.fit(muppet, shirt_size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+        Image.paste(muppet, box=None, mask=shirt)
 
-        muppet.paste(shirt, shirt)
+        # muppet.paste(shirt, shirt)
 
         muppet.save('after1.jpg')
     except FileNotFoundError:
