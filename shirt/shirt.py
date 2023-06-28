@@ -18,7 +18,7 @@ def main():
         shirt_size = shirt.size
 
         # resize input to the size of shirt
-        ImageOps.fit(muppet, shirt_size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+        ImageOps.fit(muppet, shirt_size, method=PIL.Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
 
         muppet.paste(shirt, shirt)
 
