@@ -13,15 +13,12 @@ def main():
 
         muppet = Image.open(sys.argv[1])
         shirt = Image.open('shirt.png')
-
-        muppet_size = muppet.size
         shirt_size = shirt.size
 
         # resize input to the size of shirt
-        ImageOps.fit(muppet, muppet_size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
-        # muppet.paste(shirt, box=None, mask=shirt)
-        muppet.paste(shirt, shirt)
-        muppet.save('after4.jpg')
+        muppet_resized_img = ImageOps.fit(muppet, shirt_size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+        muppet_resized_img.paste(shirt, shirt)      # overlay shirt over muppet
+        muppet_resized_img.save('after7.jpg')       # save it
     except FileNotFoundError:
         sys.exit('Input does not exist')
 
