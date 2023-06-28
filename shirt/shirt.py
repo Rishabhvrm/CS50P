@@ -4,23 +4,18 @@ from PIL import ImageOps
 
 def main():
     validations()
-    images = []
-
     try:
-        for arg in sys.argv[1:]:
-            # image = Image.open(arg)
-            images.append(arg)
-
-        muppet = Image.open(sys.argv[1])
-        shirt = Image.open('shirt.png')
+        muppet = Image.open(sys.argv[1])            # input image
+        shirt = Image.open('shirt.png')             # shirt image
+    except FileNotFoundError:
+        sys.exit('Input does not exist')
+    else:
         shirt_size = shirt.size
 
         # resize input to the size of shirt
         muppet_resized_img = ImageOps.fit(muppet, shirt_size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
         muppet_resized_img.paste(shirt, shirt)      # overlay shirt over muppet
-        muppet_resized_img.save('after7.jpg')       # save it
-    except FileNotFoundError:
-        sys.exit('Input does not exist')
+        muppet_resized_img.save(sys.argv[2])        # save it
 
 
 def validations():
