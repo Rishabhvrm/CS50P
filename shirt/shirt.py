@@ -13,6 +13,8 @@ try:
 except:
     sys.exit('Invalid output')
 else:
-    if extension1 not in valid_extensions or extensi
+    valid_extensions = []
+    if extension1 not in valid_extensions or extension2 not in valid_extension:
+        sys.exit('')
     if extension1 != extension2:
         sys.exit('Input and output have different extensions')
