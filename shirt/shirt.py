@@ -6,5 +6,10 @@ if len(sys.argv) < 3:
 if len(sys.argv) > 3:
     sys.exit('Too many command-line arguments')
 
+
+
 _, extension1 = sys.argv[1].split('.')
-__, extension2 = sys.argv[1]
+__, extension2 = sys.argv[1].split('.')
+
+if extension1 != extension2:
+    sys.exit('Input and output have different extensions')
