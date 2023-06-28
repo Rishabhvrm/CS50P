@@ -20,7 +20,13 @@ else:
     if extension1 != extension2:
         sys.exit('Input and output have different extensions')
 
+images = []
 
-for arg in sys.argv[1:]:
-    image = Image.open(arg)
-    images.append(image)
+try:
+    for arg in sys.argv[1:]:
+        image = Image.open(arg)
+        images.append(image)
+except FileNotFoundError:
+    sys.exit('Input does not exist')
+
+
