@@ -12,6 +12,10 @@ def main():
 
         muppet = Image.open(sys.argv[1])
         shirt = Image.open('shirt.png')
+        muppet_size = muppet.size
+        shirt_size = muppet_size
+
+
         muppet.paste(shirt, shirt)
 
         muppet.save('after1.jpg')
