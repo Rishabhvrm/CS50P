@@ -24,7 +24,7 @@ def main():
         # muppet.paste(shirt, shirt)
 
         # muppet.save('after1.jpg')
-        Image.save('after1', format=jpg, **params)
+        muppet.save('after1', format='JPG')
     except FileNotFoundError:
         sys.exit('Input does not exist')
 
