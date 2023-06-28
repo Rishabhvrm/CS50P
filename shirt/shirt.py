@@ -12,7 +12,9 @@ def main():
 
         muppet = Image.open[sys.argv[1]]
         shirt = Image.open('shirt.png')
-        shirt = Image.open[]
+        muppet.paste(shirt, shirt)
+
+        muppent.save('after1.jpg')
     except FileNotFoundError:
         sys.exit('Input does not exist')
 
