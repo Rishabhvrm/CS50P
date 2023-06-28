@@ -1,6 +1,7 @@
 import sys
 from PIL import Image
 from PIL import ImageOps
+import os
 
 def main():
     validations()
@@ -26,12 +27,12 @@ def validations():
         sys.exit('Too many command-line arguments')
 
     try:
-        _, extension1 = sys.argv[1].split('.')
-        __, extension2 = sys.argv[2].split('.')
+        _, extension1 = os.path.splitext(sys.argv[1])
+        _, extension2 = os.path.splitext(sys.argv[2])
     except:
         sys.exit('Invalid output')                      # if filename does not have '.'
     else:
-        valid_extension = ['jpg', 'jpeg', 'png']
+        valid_extension = ['.jpg', '.jpeg', '.png']
         if extension1 not in valid_extension:
             sys.exit('Invalid input')
         if extension2 not in valid_extension:
