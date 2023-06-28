@@ -23,9 +23,8 @@ def validations():
     try:
         _, extension1 = sys.argv[1].split('.')
         __, extension2 = sys.argv[2].split('.')
-        print(extension1, extension2)
     except:
-        sys.exit('Invalid output')      # if filename does not have '.'
+        sys.exit('Invalid output')                      # if filename does not have '.'
     else:
         valid_extension = ['jpg', 'jpeg', 'png']
         if extension1 not in valid_extension:
