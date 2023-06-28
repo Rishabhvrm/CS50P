@@ -7,8 +7,11 @@ def main():
 
     try:
         for arg in sys.argv[1:]:
-            image = Image.open(arg)
-            images.append(image)
+            # image = Image.open(arg)
+            images.append(arg)
+
+        shirt = Image.open[sys.argv[1]]
+        
     except FileNotFoundError:
         sys.exit('Input does not exist')
 
