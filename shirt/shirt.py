@@ -18,10 +18,10 @@ def main():
         shirt_size = shirt.size
 
         # resize input to the size of shirt
-        ImageOps.fit(muppet, shirt_size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+        ImageOps.fit(muppet, muppet_size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
         # muppet.paste(shirt, box=None, mask=shirt)
         muppet.paste(shirt, shirt)
-        muppet.save('after3.jpg')
+        muppet.save('after4.jpg')
     except FileNotFoundError:
         sys.exit('Input does not exist')
 
