@@ -15,9 +15,10 @@ def main():
         shirt = Image.open('shirt.png')
 
         muppet_size = muppet.size
-        shirt_size = muppet_size
+        shirt_size = shirt.size
 
-        ImageOps.fit(shirt, muppet_size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))[muppet]
+        # resize input to the size of shirt
+        ImageOps.fit(muppet, shirt_size, method=Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
 
         muppet.paste(shirt, shirt)
 
