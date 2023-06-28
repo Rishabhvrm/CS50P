@@ -28,7 +28,9 @@ def validations():
         sys.exit('Invalid output')      # if filename does not have '.'
     else:
         valid_extension = ['jpg', 'jpeg', 'png']
-        if extension1 not in valid_extension or extension2 not in valid_extension:
+        if extension1 not in valid_extension:
+            sys.exit('Invalid input')
+        if extension2 not in valid_extension:
             sys.exit('Invalid output')
         if extension1 != extension2:
             sys.exit('Input and output have different extensions')
