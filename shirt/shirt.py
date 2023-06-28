@@ -6,5 +6,5 @@ if len(sys.argv) < 3:
 if len(sys.argv) > 3:
     sys.exit('Too many command-line arguments')
 
-if len(sys.argv) < 3:
-    sys.exit('')
+_, extension1 = sys.argv[1].split('.')
+__, extension2 = sys.argv[1]
