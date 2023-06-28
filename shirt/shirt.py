@@ -10,8 +10,9 @@ def main():
             # image = Image.open(arg)
             images.append(arg)
 
-        shirt = Image.open[sys.argv[1]]
-        
+        muppet = Image.open[sys.argv[1]]
+        shirt = Image.open('shirt.png')
+        shirt = Image.open[]
     except FileNotFoundError:
         sys.exit('Input does not exist')
 
