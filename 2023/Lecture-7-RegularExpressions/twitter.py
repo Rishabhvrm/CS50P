@@ -11,10 +11,9 @@ url = input("URL: ").strip()
 # substitute
 # username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
 
-re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)    # (.+) is for return value
-
-
-print(f"Username: {username}")
+matches = re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)    # (.+) is for return value
+if matches:
+    print(f"Username: {username}")
 
 # https://twitter.com/davidjmalan
 
