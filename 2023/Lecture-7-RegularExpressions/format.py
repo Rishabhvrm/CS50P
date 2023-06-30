@@ -4,9 +4,10 @@ import re
 
 name = input("What's your name? ").strip()
 # matches = re.search(r"^.+, .+$", name)
-matches = re.search(r"^(.+), (.+)$", name)          # not grouping by using (), we want a return value, we want to capture something
+matches = re.search(r"^(.+), ?(.+)$", name)          # not grouping by using (), we want a return value, we want to capture something
 if matches:                                         # i.e. we found something, matches is not empty
-    last, first = matches.groups()
+    last = matches.group(1)
+    first = matches.group(2)
     name = f"{first} {last}"
 print(f"hello, {name}")
 
