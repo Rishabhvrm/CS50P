@@ -9,7 +9,10 @@ url = input("URL: ").strip()
 # username = url.removeprefix("https://twitter.com/")
 
 # substitute
-username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
+# username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
+
+re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)    # (.+) is for return value
+
 
 print(f"Username: {username}")
 
