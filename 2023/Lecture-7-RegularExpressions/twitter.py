@@ -3,7 +3,8 @@
 # extract user name from that
 
 url = input("URL: ").strip()
-username = url.replace("https://twitter.com/", "") # replace starting url with nothing
+# username = url.replace("https://twitter.com/", "") # replace starting url with nothing
+username = url.removeprefix("https://twitter.com/")
 print(f"Username: {username}")
 
 # https://twitter.com/davidjmalan
@@ -11,6 +12,7 @@ print(f"Username: {username}")
 
 """
 
-using replace()
-
+using
+    replace()
+    removeprefix()
 """
