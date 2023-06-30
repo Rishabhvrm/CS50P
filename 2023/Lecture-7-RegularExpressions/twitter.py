@@ -21,6 +21,7 @@ if matches := re.search(r"^https?://(?:www\.)?twitter\.com/(\w+)", url, re.IGNOR
 
 
 """
+Notes:
 
 using string methods
     replace()
@@ -28,4 +29,8 @@ using string methods
 
 using re method
     re.sub(pattern, repl, string, count=0, flags=0)     # substitue, replacement
+    re.search()
+    re.split(pattern, string, maxsplit=0, flags=0)      # split string using multiple chars
+    re.findall(pattern, string, flags=0)                # multiple copies of same pattern in string
+
 """
