@@ -11,9 +11,9 @@ url = input("URL: ").strip()
 # substitute
 # username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
 
-matches = re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)    # (.+) is for return value
+matches = re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)    # (.+) is for return value, we used (www.) for grouping but it also returns a value
 if matches:
-    print(f"Username:", matches.group(1))
+    print(f"Username:", matches.group(2)) # not matches.group(1)
 
 # https://twitter.com/davidjmalan
 
