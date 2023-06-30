@@ -13,7 +13,7 @@ url = input("URL: ").strip()
 
 matches = re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)    # (.+) is for return value
 if matches:
-    print(f"Username: {username}")
+    print(f"Username:", matches.group(1))
 
 # https://twitter.com/davidjmalan
 
