@@ -16,13 +16,14 @@ print(f"hello, {name}")
 
 NOTES:
 
-we can extract info from re
-whatever matches in paranthesis, can be returned
+we can extract info from re, using paranthesis OR grouping
+re.search() returns whatever matches in the given string with the pattern
+get a return value for when grouped
+use it using matches.groups()    # as seen in above code
 
+whatever matches in paranthesis, can be returned
 (?:...) don't capture, just group
 
 
-get a return value for when grouped
-use it using matches.groups()    # as seen in above code
 
 """
