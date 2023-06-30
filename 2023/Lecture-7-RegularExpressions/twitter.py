@@ -4,7 +4,7 @@
 
 url = input("URL: ").strip()
 username = url.replace("https://twitter.com/", "") # replace starting url with nothing
-print(f"Username: {username})
+print(f"Username: {username}")
 
 # https://twitter.com/davidjmalan
 
