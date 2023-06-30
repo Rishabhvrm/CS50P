@@ -61,7 +61,6 @@ $ matches end of string just before newline at end of string
 
 [a-zA-Z0-9] represents only allow alphbets and digits. No separator needed in between a to z, A to Z and 0 to 9
 \w known as 'word character'. Contains alphanumeric and underscore. Same as above
-
 \W not a word character
 \d decimal digit
 \D not a decimal digit
@@ -70,14 +69,15 @@ $ matches end of string just before newline at end of string
 
 (com|edu|gov|net|org) here | = OR. Eg: re.search(r"^\w+@\w+\.(edu|org|gov)$", email)
 (\w|\s) a word or a space. Similar to [a-zA-Z0-9_ ]
+
 A|B either A or B
 (...) a group
 (?:...) non-capturing version
 
 re flags:
     re.IGNORECASE : case insensitive
-    re.MULTILINE : matches multiple lines
-    re.DOTALL : . means any character and new line (usually dot means any character except newline)
+    re.MULTILINE  : matches multiple lines
+    re.DOTALL     : . means any character and new line (usually dot means any character except newline)
 
 
 re.match(pattern, string, flag)        no need for ^. Takes care of start.
