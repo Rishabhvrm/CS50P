@@ -46,7 +46,7 @@ good practice to use r string for regex (raw string)
 + 1 or more repetitions (of the things to left)
 ? 0 or 1 repetition
 {m} m repetitions
-{m,n} m-n repetitions
+{m,n} m-n repetitions, lower and upper bound
 
 .* any character 0 or more times
 .+ any character 1 or more times
