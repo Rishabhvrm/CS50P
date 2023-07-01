@@ -4,7 +4,7 @@ import sys
 def main():
     # print(validate(input("IPv4 Address: ")))
     n = '123'
-    if re.search(r"[100-111]", n):
+    if re.search(r"", n):
         print(True)
     else:
         print(False)
