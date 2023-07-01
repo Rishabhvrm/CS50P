@@ -5,7 +5,7 @@ def main():
 
 
 def parse(s):
-    re.search(r"", s, flag=re.IGNORECASE)
+    re.search(r"srch=.+", s, flag=re.IGNORECASE)
 
 
 
