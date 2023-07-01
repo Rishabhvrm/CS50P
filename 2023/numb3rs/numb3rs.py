@@ -3,7 +3,7 @@ import sys
 
 def main():
     # print(validate(input("IPv4 Address: ")))
-    n = '251'
+    n = '300'
     if re.search(r"[01]?[0-9]?[0-9]|2[0-4][0-9]", n):
         print(True)
     else:
