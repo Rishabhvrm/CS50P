@@ -3,8 +3,8 @@ import sys
 
 def main():
     # print(validate(input("IPv4 Address: ")))
-    n = '123'
-    if re.search(r"([0-9]|[1-9][0-9])", n):
+    n = '0'
+    if re.search(r"[01][0-9][0-9]", n):
         print(True)
     else:
         print(False)
