@@ -5,10 +5,7 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r"https?://(?:www\.)?youtube\.com/embed/(\w+)", s, re.IGNORECASE)
-    print(matches)
-    if matches:
-        print('yaya')
+    if matches := re.search(r"https?://(?:www\.)?youtube\.com/embed/(\w+)", s, re.IGNORECASE):
         return(matches.group(1))
 
 
