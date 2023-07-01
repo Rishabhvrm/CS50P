@@ -7,7 +7,7 @@ def main():
 def parse(s):
     if matches := re.search(r"^https?://(?:www\.)?youtube\.com/embed/(\w+)", s, re.IGNORECASE):
         print('yaya')
-        print(matches.group(1))
+        return(matches.group(1))
 
 
 if __name__ == "__main__":
