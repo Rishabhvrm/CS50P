@@ -10,7 +10,7 @@ def parse(s):
     # must have ://
     # www. is optional (? is 0 or 1)
     # must have youtube.com/embed/, add \ before . to let the regex know we want dot(.) not any other character
-    
+    # any \w i.e a-zA-Z0-9_ i.e. alphanumeric and underscore can follow afterwards
     if matches := re.search(r"<.*https?://(?:www\.)?youtube\.com/embed/(\w+)", s, re.IGNORECASE):
         return("https://youtu.be/" + matches.group(1))
 
