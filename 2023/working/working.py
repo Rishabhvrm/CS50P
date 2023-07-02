@@ -9,18 +9,23 @@ def main():
 def convert(time):
     if matches := re.search(r"^(\d{1,2}):(\d{1,2}) (AM|PM) to (\d{1,2}):(\d{1,2}) (AM|PM)$", time):
         print('Yayy')
-        h_am, m_am, time_indicator1 = matches.group(1), matches.group(2), matches.group(3)
-        h_pm, m_pm, time_indicator2 = matches.group(4), matches.group(5), matches.group(6)
-        return convert_to_military_time(h_am, h_pm, m_am, m_pm)
-    elif matches := re.search(r"^(\d{1,2}) (?:AM|PM) to (\d{1,2}) (?:AM|PM)$", time):
+        hour, minute, time_indicator = matches.group(1), matches.group(2), matches.group(3)
+        start = convert_to_military_time(hour, minute, time_indicator)
+
+        hour, minute, time_indicator = matches.group(4), matches.group(5), matches.group(6)
+        end = convert_to_military_time(hour, minute, time_indicator)
+        return f"{start} to {end}"
+
+    elif matches := re.search(r"^(\d{1,2}) (AM|PM) to (\d{1,2}) (AM|PM)$", time):
         print('Nayy')
-        h_am, h_pm = matches.group(1), matches.group(2)
+        hour, minute = matches.group(1), matches.group(2)
         return convert_to_military_time(h_am, h_pm)
 
 
-def convert_to_military_time(a, b, c = "00", d = "00"):
-    z = str(int(b) + 12)
-    return(f"{a}:{c} to {z}:{d}")
+def convert_to_military_time(h, m="00", time_indicator):
+    if time_indicator == "PM":
+        h = str(int(h) + 12)
+    return f"{h}:{m}"
 
 
 
