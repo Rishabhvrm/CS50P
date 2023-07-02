@@ -8,7 +8,7 @@ def main():
 # 9 AM to 5 PM
 def convert(time):
     if matches := re.search(r"^(\d{1,2}):(\d{1,2}) (AM|PM) to (\d{1,2}):(\d{1,2}) (AM|PM)$", time):
-        print('Yayy')
+        # print('Yayy')
         hour, minute, time_indicator = matches.group(1), matches.group(2), matches.group(3)
         start = convert_to_military_time(time_indicator, hour, minute)
 
@@ -18,7 +18,7 @@ def convert(time):
         return f"{start} to {end}"
 
     elif matches := re.search(r"^(\d{1,2}) (AM|PM) to (\d{1,2}) (AM|PM)$", time):
-        print('Nayy')
+        # print('Nayy')
         hour, time_indicator = matches.group(1), matches.group(2)
         start = convert_to_military_time(time_indicator, hour)
 
