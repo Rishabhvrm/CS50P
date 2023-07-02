@@ -18,8 +18,11 @@ def convert(time):
 
     elif matches := re.search(r"^(\d{1,2}) (AM|PM) to (\d{1,2}) (AM|PM)$", time):
         print('Nayy')
-        hour, minute = matches.group(1), matches.group(2)
-        return convert_to_military_time(h_am, h_pm)
+        hour, time_indicator = matches.group(1), matches.group(2)
+        convert_to_military_time(h_am, h_pm)
+
+        hour, time_indicator = matches.group(3), matches.group(2)
+        convert_to_military_time(h_am, h_pm)
 
 
 def convert_to_military_time(h, m="00", time_indicator):
