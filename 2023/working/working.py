@@ -9,7 +9,7 @@ def main():
 def convert(time):
     if matches := re.search(r"^(\d{1,2}):(\d{1,2}) (AM|PM) to (\d{1,2}):(\d{1,2}) (AM|PM)$", time):
         print('Yayy')
-        h_am, m_am, time h_pm, m_pm = matches.group(1), matches.group(2), matches.group(3), matches.group(4)
+        h_am, m_am, time_indicator1, h_pm, m_pm = matches.group(1), matches.group(2), matches.group(3), matches.group(4)
         return convert_to_military_time(h_am, h_pm, m_am, m_pm)
     elif matches := re.search(r"^(\d{1,2}) (?:AM|PM) to (\d{1,2}) (?:AM|PM)$", time):
         print('Nayy')
