@@ -30,6 +30,9 @@ def convert(time):
 
         return f"{start} to {end}"
 
+    else:
+        raise ValueError
+
 
 def convert_to_military_time(time_indicator, h, m="00"):
     # validate time
