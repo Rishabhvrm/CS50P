@@ -29,11 +29,18 @@ def convert(time):
 
 
 def convert_to_military_time(time_indicator, h, m="00"):
+    # add 12 for every case except 12
+    # don't need 24:00 for 12 PM
     if time_indicator == "PM" and h != "12":
-        print(h)
         h = str(int(h) + 12)
-    if len(h) == 1:
-        h = f"0{h}"
+
+    # 12 AM is 00
+    if time_indicator == "AM" and h == "12":
+        h = "00"
+
+    # 9 -> 09
+    if len(h) == 1: h = f"0{h}"
+
     return f"{h}:{m}"
 
 
