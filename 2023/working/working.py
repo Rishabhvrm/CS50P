@@ -31,6 +31,8 @@ def convert(time):
 def convert_to_military_time(time_indicator, h, m="00"):
     if time_indicator == "PM":
         h = str(int(h) + 12)
+    if len(h) == 1:
+        h = f"0{h}"
     return f"{h}:{m}"
 
 
