@@ -1,5 +1,5 @@
 from working import convert
-
+import pytest
 
 def test_hours():
     assert convert("12 AM to 12 PM") == "00:00 to 12:00"
@@ -10,5 +10,15 @@ def test_hours_incorrect():
 def test_minutes_incorrect():
     assert convert("9:00 AM to 5:00 PM") != "09:05 to 17:00"
 
+# making sure that a ValueError will be raised
+# when user omits " to "
 def test_format():
-    assert convert("") != ""
+    with pytest.raises(ValueError):
+        convert("2PM 8AM")
+
+# making sure that a ValueError will be raised
+# for incorrect range
+def test_range():
+    with pytest.raises(ValueError):
+        convert("6:70 AM to 8:90PM")
+
