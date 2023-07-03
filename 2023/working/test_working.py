@@ -18,7 +18,15 @@ def test_format():
 
 # making sure that a ValueError will be raised
 # for incorrect range
-def test_range():
+def test_range1():
     with pytest.raises(ValueError):
         convert("6:70 AM to 8:90PM")
+
+def test_range2():
+    with pytest.raises(ValueError):
+        convert("6:00 AM to 8:90PM")
+
+def test_range3():
+    with pytest.raises(ValueError):
+        convert("34 AM to 8 PM")
 
