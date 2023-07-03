@@ -1,8 +1,11 @@
 import re
+import sys
 
 def main():
-    print(convert(input("Hours: ")))
-
+    try:
+        print(convert(input("Hours: ")))
+    except:
+        sys.exit('Not a valid time')
 
 def convert(time):
     # allowed input - 9:00 AM to 5:00 PM
@@ -29,6 +32,9 @@ def convert(time):
 
 
 def convert_to_military_time(time_indicator, h, m="00"):
+    # validate time
+    validate_time(h,m)
+
     # add 12 for every case except 12
     # don't need 24:00 for 12 PM
     if time_indicator == "PM" and h != "12":
@@ -40,10 +46,11 @@ def convert_to_military_time(time_indicator, h, m="00"):
 
     # 9 -> 09
     if len(h) == 1: h = f"0{h}"
-
     return f"{h}:{m}"
 
-
+def validate_time(h,m):
+    if not 0 <= int(h) <= 12 or not 0 <= int(m) <= 60:
+        raise ValueError
 
 
 if __name__ == "__main__":
