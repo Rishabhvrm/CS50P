@@ -3,10 +3,9 @@ import re
 def main():
     print(convert(input("Hours: ")))
 
-# allowed input
-# 9:00 AM to 5:00 PM
-# 9 AM to 5 PM
+
 def convert(time):
+    # allowed input - 9:00 AM to 5:00 PM
     if matches := re.search(r"^(\d{1,2}):(\d{1,2}) (AM|PM) to (\d{1,2}):(\d{1,2}) (AM|PM)$", time):
         # print('Yayy')
         hour, minute, time_indicator = matches.group(1), matches.group(2), matches.group(3)
@@ -17,6 +16,7 @@ def convert(time):
 
         return f"{start} to {end}"
 
+    # allowed input - 9 AM to 5 PM
     elif matches := re.search(r"^(\d{1,2}) (AM|PM) to (\d{1,2}) (AM|PM)$", time):
         # print('Nayy')
         hour, time_indicator = matches.group(1), matches.group(2)
