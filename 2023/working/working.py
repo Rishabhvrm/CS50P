@@ -49,7 +49,7 @@ def convert_to_military_time(time_indicator, h, m="00"):
     return f"{h}:{m}"
 
 def validate_time(h,m):
-    if not 0 <= int(h) <= 12 or not 0 <= int(m) <= 60:
+    if not 0 <= int(h) <= 12 or not 0 <= int(m) <= 59:
         raise ValueError
 
 
