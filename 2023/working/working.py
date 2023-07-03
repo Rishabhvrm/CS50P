@@ -2,10 +2,7 @@ import re
 import sys
 
 def main():
-    try:
-        print(convert(input("Hours: ")))
-    except:
-        sys.exit('Not a valid time')
+    print(convert(input("Hours: ")))
 
 def convert(time):
     # allowed input - 9:00 AM to 5:00 PM
