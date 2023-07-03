@@ -29,7 +29,8 @@ def convert(time):
 
 
 def convert_to_military_time(time_indicator, h, m="00"):
-    if time_indicator == "PM" and h != 12:
+    if time_indicator == "PM" and h != "12":
+        print(h)
         h = str(int(h) + 12)
     if len(h) == 1:
         h = f"0{h}"
