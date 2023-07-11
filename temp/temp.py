@@ -20,3 +20,4 @@ def find_duplicates(lst):
     return result
 
 print(find_duplicates(lst))
+print(find_duplicates(lst))
