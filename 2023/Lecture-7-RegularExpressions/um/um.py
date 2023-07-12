@@ -5,7 +5,7 @@ def main():
 
 
 def count(s):
-    ums = re.findall(r"^um$", s, flag=re.IGNORECASE)
+    ums = re.findall(r"^\bum\b$", s, flags=re.IGNORECASE)
     print(ums)
 
 
