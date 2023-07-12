@@ -8,7 +8,7 @@ def main():
         student["house"] = "Ravenclaw"
 
     print(f"{student['name']} from {student['house']}")
-
+    
 
 def get_student():
     # name = input("Name: ")
@@ -38,7 +38,7 @@ return multiple values
 tuple - immutable, similar to list
 Use a tuple when you don't want the values to get changed
 Use a list when you may want to change the values
-
+can change a tuple that contains list (can change list values)
 
 
 """
