@@ -5,12 +5,12 @@ def main():
 
 
 def count(s):
-    
+    ums = re.findall(r"^um$", s, flag=re.IGNORECASE)
+    print(ums)
 
 
 
-
-if __name__ == "__main__"":
+if __name__ == "__main__":
     main()
 
 
