@@ -1,7 +1,12 @@
 def main():
     student = get_student()
+
     # if student[0] == "Padma":
     #     student[1] = "Ravenclaw"
+
+    if student["name"] == "Padma":
+        student["house"] = "Ravenclaw"
+
     print(f"{student['name']} from {student['house']}")
 
 
