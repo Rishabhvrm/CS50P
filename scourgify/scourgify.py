@@ -26,7 +26,7 @@ except FileNotFoundError:
     sys.exit(f'Could not read {sys.argv[1]}')
 else:
     # write in new file
-    with open(sys.argv[2]) as csvfile:
+    with open(sys.argv[2], "w") as csvfile:
         fieldnames = ['first', 'last', 'house']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
