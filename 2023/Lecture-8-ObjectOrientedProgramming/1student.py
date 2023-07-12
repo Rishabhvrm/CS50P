@@ -8,9 +8,9 @@ def main():
 def get_student():
     name = input("Name: ")
     house = input("House: ")
-    return name, house          # we're actually returning one tuple, not two values
-    # return (name, house)      # same as above
-
+    # return name, house          # we're actually returning one tuple, not two values
+    # return (name, house)        # same as above
+    return [name, house]          # return a list bcz we want to change the value
 
 if __name__ == "__main__":
     main()
@@ -22,5 +22,8 @@ Notes:
 return multiple values
 tuple - immutable, similar to list
 Use a tuple when you don't want the values to get changed
+Use a list when you may want to change the values
+
+
 
 """
