@@ -5,12 +5,11 @@ def main():
 
 def validate(email):
     try:
-        flag = validators.email(email)
+        return "Valid" if validators.email(email) else "Invalid"
     except errors.EmptyValueError:
         return "Invalid"
     except errors.InvalidEmailError:
         return "Invalid"
-    else
 
 
 if __name__ == "__main__":
