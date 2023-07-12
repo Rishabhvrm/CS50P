@@ -1,4 +1,4 @@
-import count from um
+from um import count
 
 
 def test_single_um():
@@ -12,3 +12,6 @@ def test_multiple_ums():
 
 def test_ums_with_other_characters():
     assert count("um, um. (um)") == 3
+
+def test_case_sensitive():
+    assert count("UM") == 1
