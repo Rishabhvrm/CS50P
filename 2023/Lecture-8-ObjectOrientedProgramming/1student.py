@@ -1,16 +1,21 @@
 def main():
     student = get_student()
-    if student[0] == "Padma":
-        student[1] = "Ravenclaw"
-    print(f"{student[0]} from {student[1]}")
+    # if student[0] == "Padma":
+    #     student[1] = "Ravenclaw"
+    print(f"{student['name']} from {student['house']}")
 
 
 def get_student():
-    name = input("Name: ")
-    house = input("House: ")
+    # name = input("Name: ")
+    # house = input("House: ")
     # return name, house          # we're actually returning one tuple, not two values
     # return (name, house)        # same as above
-    return [name, house]          # return a list bcz we want to change the value
+    # return [name, house]        # return a list bcz we want to change the value
+
+    student = {}
+    student["name"] = input("Name: ")
+    student["house"] = input("House: ")
+    return student
 
 if __name__ == "__main__":
     main()
