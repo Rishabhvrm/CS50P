@@ -9,7 +9,7 @@ def validate(email):
     except errors.EmptyValueError:
         return "Invalid"
     except errors.InvalidEmailError:
-        return "Invalid"y
+        return "Invalid"
 
 
 if __name__ == "__main__":
