@@ -19,5 +19,6 @@ Notes:
 
 return multiple values
 tuple - immutable, similar to list
+Use a tuple when you don't want the values to get changed
 
 """
