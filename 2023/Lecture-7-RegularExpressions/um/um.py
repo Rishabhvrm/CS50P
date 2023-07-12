@@ -5,6 +5,8 @@ def main():
 
 
 def count(s):
+    # match um with word bounday
+    # https://www.freecodecamp.org/news/what-does-b-in-regex-mean-word-boundary-and-non-word-boundary-metacharacters/#:~:text=(%20%5Cw%20).-,How%20to%20Use%20the%20%E2%80%9CB%E2%80%9D%20Metacharacter%20in%20RegEx,things%20as%20they%20are%20opposites.
     ums = re.findall(r"\bum\b", s, flags=re.IGNORECASE)
     return len(ums)
 
