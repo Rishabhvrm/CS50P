@@ -12,10 +12,15 @@ def get_student():
     # return (name, house)        # same as above
     # return [name, house]        # return a list bcz we want to change the value
 
-    student = {}
-    student["name"] = input("Name: ")
-    student["house"] = input("House: ")
-    return student
+    # student = {}
+    # student["name"] = input("Name: ")
+    # student["house"] = input("House: ")
+    # return student
+
+    # same thing as above
+    name = input("Name: ")
+    house = input("House: ")
+    return {"name": name, "house": house}
 
 if __name__ == "__main__":
     main()
