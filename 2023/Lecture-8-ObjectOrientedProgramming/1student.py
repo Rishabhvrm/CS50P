@@ -5,8 +5,6 @@ class Student:
     def __init__(self, name, house):
         if not name:
             raise ValueError("Missing name")
-        if house not in ["Gryffindor","Hufflepuff", "Ravenclaw", "Slytherin"]:
-            raise ValueError("Invalid house")
         self.name = name
         self.house = house
 
@@ -118,7 +116,8 @@ raise Errors
 we can still change the values of attributes once their values has been assigned
 properties
 decorators - functions that modify the behaviour of other functions
-    @property
+@property - getter
+@getter_name.setter - setter
 
 if setter is there then we can't use student.house = "abc"
 
