@@ -27,14 +27,14 @@ class Student:
     # Getter
     @property
     def house(self):
-        return self.house
+        return self._house
 
     # Setter
     @house.setter
     def house(self, house):
         if house not in ["Gryffindor","Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
-        self.house = house
+        self._house = house
 
 
 
@@ -121,7 +121,8 @@ decorators - functions that modify the behaviour of other functions
 
 if setter is there then we can't use student.house = "abc"
 
-
+function and variable can't have same name
+put an underscore to differentiate
 
 
 """
