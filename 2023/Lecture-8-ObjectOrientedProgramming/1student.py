@@ -1,7 +1,9 @@
 class Student:
     # initialize method
     # initialize the contents of an object
-    def __init__(self):
+    def __init__(self, name, house):
+        self.name = name
+        self.house = house
 
 
 
