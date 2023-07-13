@@ -104,7 +104,7 @@ raise Errors
 
 we can still change the values of attributes once their values has been assigned
 properties
-decorators - 
+decorators - functions that modify the behaviour of other functions
     @property
 
 
