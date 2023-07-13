@@ -52,5 +52,10 @@ Use a tuple when you don't want the values to get changed
 Use a list when you may want to change the values
 can change a tuple that contains list (can change list values)
 
+Classes
+
+# enough code to define a class
+class Student:
+    ...
 
 """
