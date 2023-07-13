@@ -2,18 +2,17 @@ class Student:
 
     # initialize method
     # initialize the contents of an object
-    def __init__(self, name, house, patronus):
+    def __init__(self, name, house):
         if not name:
             raise ValueError("Missing name")
         if house not in ["Gryffindor","Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self.name = name
         self.house = house
-        self.patronus = patronus
 
     # used to print a object
     def __str__(self):
-        return f"{self.name} is from {self.house} with patronus {self.patronus}"
+        return f"{self.name} is from {self.house}"
 
     def charm(self):
         match self.patronus:
@@ -87,24 +86,28 @@ Use a tuple when you don't want the values to get changed
 Use a list when you may want to change the values
 can change a tuple that contains list (can change list values)
 
-Classes
 
+Classes:
 # enough code to define a class
 class Student:
     ...
 
-
 instance methods:
     __init__(self)      # used to initialize the contents of an object from a class
     self - it gives us access to the object that was just created
+    self should be present in every method in a class which will reference to the current object
     make parameters optional by None (house = None)
+    __str__ - more for users
+    __repr__ - more for developer's eye
 
 raise Errors
 
-__str__ - more for users
-__repr__ - more for developer's eye
+we can still change the values of attributes once their values has been assigned
+properties 
 
 
-self should be present in every method in a class which will reference to the current object
+
+
+
 
 """
