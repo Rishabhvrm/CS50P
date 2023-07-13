@@ -41,8 +41,6 @@ def main():
 
     # print(f"{student.name} from {student.house}")
     print(student)
-    print("Expecto Patronum!")
-    print(student.charm())
 
 
 def get_student():
@@ -71,8 +69,9 @@ def get_student():
     # use constructor
     name = input("Name: ")
     house = input("House: ")
-    patronus = input("Patronus: ")
-    return Student(name, house, patronus)
+    # patronus = input("Patronus: ")
+    # return Student(name, house, patronus)
+    return Student(name, house)
 
 
 if __name__ == "__main__":
