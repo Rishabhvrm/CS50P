@@ -103,7 +103,9 @@ instance methods:
 raise Errors
 
 we can still change the values of attributes once their values has been assigned
-properties 
+properties
+decorators - 
+    @property
 
 
 
