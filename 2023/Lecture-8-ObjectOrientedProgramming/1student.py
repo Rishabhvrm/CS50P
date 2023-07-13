@@ -33,11 +33,17 @@ def get_student():
     # house = input("House: ")
     # return {"name": name, "house": house}
 
-    # use class
-    student = Student()
-    student.name = input("Name: ")
-    student.house = input("House: ")
-    return student
+    # use class (introduction)
+    # student = Student()
+    # student.name = input("Name: ")
+    # student.house = input("House: ")
+    # return student
+
+    # use constructor
+    name = input("Name: ")
+    house = input("House: ")
+    return Student(name, house)
+
 
 if __name__ == "__main__":
     main()
