@@ -28,6 +28,7 @@ class Student:
     @property
     def house(self):
         return self._house      # variable can't have same name as the function
+        # it will return the value set by setter function
 
     # Setter
     @house.setter
@@ -40,7 +41,6 @@ class Student:
 
 def main():
     student = get_student()
-    student.house = "private"
     # for list
     # if student[0] == "Padma":
     #     student[1] = "Ravenclaw"
