@@ -72,4 +72,7 @@ class Student:
 
 instance methods:
     __init__(self)      # used to initialize the contents of an object from a class
+    self - it gives us access to the object that was just created
+
+
 """
