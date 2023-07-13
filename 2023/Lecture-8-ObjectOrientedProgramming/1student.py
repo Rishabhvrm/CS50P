@@ -22,7 +22,7 @@ def main():
     # if student["name"] == "Padma":
     #     student["house"] = "Ravenclaw"
 
-    print(f"{student.name} from {student.house}")
+    # print(f"{student.name} from {student.house}")
 
 
 def get_student():
@@ -77,6 +77,7 @@ class Student:
 instance methods:
     __init__(self)      # used to initialize the contents of an object from a class
     self - it gives us access to the object that was just created
+    make parameters optional by None (house = None)
 
 raise Errors
 
