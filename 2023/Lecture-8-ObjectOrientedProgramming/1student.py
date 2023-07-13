@@ -117,7 +117,7 @@ properties
 decorators - functions that modify the behaviour of other functions
     @property
 
-if setter is there then we can't use student.house = "
+if setter is there then we can't use student.house = "abc"
 
 
 
