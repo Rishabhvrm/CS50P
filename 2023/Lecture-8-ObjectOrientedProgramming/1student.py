@@ -9,7 +9,9 @@ class Student:
         self.name = name
         self.house = house
 
-    def
+    # used to print a object
+    def __str__(self):
+        return f"{self.name} is from {self.house}"
 
 
 
