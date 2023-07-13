@@ -1,13 +1,14 @@
 class Student:
     # initialize method
     # initialize the contents of an object
-    def __init__(self, name, house):
+    def __init__(self, name, house, patronus):
         if not name:
             raise ValueError("Missing name")
         if house not in ["Gryffindor","Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self.name = name
         self.house = house
+        self.patronus = patronus
 
     # used to print a object
     def __str__(self):
@@ -56,7 +57,8 @@ def get_student():
     # use constructor
     name = input("Name: ")
     house = input("House: ")
-    return Student(name, house)
+    patronus = input("Patronus: ")
+    return Student(name, house, patronus)
 
 
 if __name__ == "__main__":
