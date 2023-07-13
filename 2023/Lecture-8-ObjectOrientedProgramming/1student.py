@@ -1,14 +1,20 @@
+class Student:
+    ...
+
+
 def main():
     student = get_student()
 
+    # for list
     # if student[0] == "Padma":
     #     student[1] = "Ravenclaw"
 
-    if student["name"] == "Padma":
-        student["house"] = "Ravenclaw"
+    # for dictionary
+    # if student["name"] == "Padma":
+    #     student["house"] = "Ravenclaw"
 
-    print(f"{student['name']} from {student['house']}")
-    
+    print(f"{student.name} from {student.house}")
+
 
 def get_student():
     # name = input("Name: ")
@@ -23,9 +29,15 @@ def get_student():
     # return student
 
     # same thing as above
-    name = input("Name: ")
-    house = input("House: ")
-    return {"name": name, "house": house}
+    # name = input("Name: ")
+    # house = input("House: ")
+    # return {"name": name, "house": house}
+
+    # use class
+    student = Student()
+    student.name = input("Name: ")
+    student.house = input("House: ")
+    return student
 
 if __name__ == "__main__":
     main()
