@@ -1,5 +1,8 @@
 class Student:
-    ...
+    # initialize method
+    # initialize the contents of an object
+    def __init__(self):
+
 
 
 def main():
@@ -64,4 +67,7 @@ Classes
 class Student:
     ...
 
+
+instance methods:
+    __init__(self)      # used to initialize the contents of an object from a class
 """
