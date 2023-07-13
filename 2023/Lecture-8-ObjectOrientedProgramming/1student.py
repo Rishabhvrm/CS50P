@@ -86,5 +86,7 @@ instance methods:
 
 raise Errors
 
+__str__ - more for users
+__repr__ - more for developer's eye
 
 """
