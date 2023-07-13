@@ -25,6 +25,16 @@ class Student:
             case _:
                 return "/"
 
+    # Getter
+    def house(self):
+        return self.house
+
+    # Setter
+    def house(self, house):
+        if house not in ["Gryffindor","Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house")
+        self.house = house
+
 
 
 def main():
@@ -107,7 +117,7 @@ properties
 decorators - functions that modify the behaviour of other functions
     @property
 
-
+if setter is there then we can't use student.house = "
 
 
 
