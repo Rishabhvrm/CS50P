@@ -1,4 +1,5 @@
 class Student:
+
     # initialize method
     # initialize the contents of an object
     def __init__(self, name, house, patronus):
@@ -103,5 +104,8 @@ raise Errors
 
 __str__ - more for users
 __repr__ - more for developer's eye
+
+
+self should be present in every method in a class which will reference to the current object
 
 """
