@@ -48,6 +48,7 @@ class Student:
 
 def main():
     student = get_student()
+    student._house = "privet"
     # for list
     # if student[0] == "Padma":
     #     student[1] = "Ravenclaw"
