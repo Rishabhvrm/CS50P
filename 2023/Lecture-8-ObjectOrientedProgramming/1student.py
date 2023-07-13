@@ -9,6 +9,8 @@ class Student:
         self.name = name
         self.house = house
 
+    def
+
 
 
 def main():
@@ -23,6 +25,7 @@ def main():
     #     student["house"] = "Ravenclaw"
 
     # print(f"{student.name} from {student.house}")
+    print(student)
 
 
 def get_student():
