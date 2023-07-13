@@ -12,7 +12,18 @@ class Student:
 
     # used to print a object
     def __str__(self):
-        return f"{self.name} is from {self.house}"
+        return f"{self.name} is from {self.house} with patronus {self.patronus}"
+
+    def charm(self):
+        match self.patronus:
+            case "Stag":
+                return "horse"
+            case "Otter":
+                return "sea-otter"
+            case "Jack Russell terrier":
+                return "dog"
+            case _:
+                return "/"
 
 
 
@@ -29,6 +40,8 @@ def main():
 
     # print(f"{student.name} from {student.house}")
     print(student)
+    print("Expecto Patronum!")
+    print(student.charm())
 
 
 def get_student():
