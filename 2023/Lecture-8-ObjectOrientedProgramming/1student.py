@@ -3,7 +3,7 @@ class Student:
     # initialize the contents of an object
     def __init__(self, name, house):
         if not name:
-            
+            raise ValueError("Missing name ")
         self.name = name
         self.house = house
 
@@ -75,6 +75,8 @@ class Student:
 instance methods:
     __init__(self)      # used to initialize the contents of an object from a class
     self - it gives us access to the object that was just created
+
+raise Errors
 
 
 """
