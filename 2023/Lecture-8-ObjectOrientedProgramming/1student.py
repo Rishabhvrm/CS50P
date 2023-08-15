@@ -135,7 +135,7 @@ properties
 
 decorators - functions that modify the behaviour of other functions
 @property - getter
-@getter_name.setter - setter (eg" @house.setter)
+@getter_name.setter - setter (eg" @house.setter )
 
 if setter is there then we can't use student.house = "abc"
 
