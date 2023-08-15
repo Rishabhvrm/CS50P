@@ -16,6 +16,7 @@ hat.sort("Harry")
 """
 Class Method
 
-@classmethod - this method is not an instance method, doesn't have access to 'self'
-
+@classmethod
+    - this method is not an instance method, doesn't have access to 'self'
+    - if there are no objects of that class
 """
