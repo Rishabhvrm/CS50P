@@ -46,7 +46,7 @@ class Student:
 
 def main():
     student = Student.get()
-    print(student)
+    print()
 
 if __name__ == "__main__":
     main()
