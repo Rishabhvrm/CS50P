@@ -87,8 +87,10 @@ def get_student():
     # use constructor
     name = input("Name: ")
     house = input("House: ")
+
     # patronus = input("Patronus: ")
     # return Student(name, house, patronus)
+    
     return Student(name, house)
 
 
