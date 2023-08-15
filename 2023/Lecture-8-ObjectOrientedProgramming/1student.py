@@ -25,6 +25,8 @@ class Student:
         return self.house
 
     def house(self, house):
+        if house not in list:
+            raise ValueError("Invalid house")
         self.house = house
 
     @property
