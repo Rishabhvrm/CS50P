@@ -58,4 +58,9 @@ Notes:
 return cls(name, house)
     - instantiate a student object, an object of the class with 'name' and 'house'
 
+@staticmethod
+inheritance
+    - let one class inherit/borrow attributes (methods/variables) from other class
+    
+
 """
