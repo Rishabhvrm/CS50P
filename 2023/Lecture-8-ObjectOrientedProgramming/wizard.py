@@ -18,6 +18,10 @@ class Student(Wizard):
     def __init__(house):
         self.house = house
 
+class Professor(Wizard):
+    def __init__(subject):
+        self.subject = subject
+
 
 
 """
