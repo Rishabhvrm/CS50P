@@ -19,17 +19,23 @@ class Student(Wizard):
         super().__init__(name)
         self.house = house
 
+    def __str__(self):
+        return f"{self.name} is from {self.house}"
+
 class Professor(Wizard):
     def __init__(self, name, subject):
         super().__init__(name)
         self.subject = subject
 
     def __str__(self):
-        print(self.name)
+        return f"{self.name} teaches {self.subject}"
 
 wizard = Wizard("Albus")
 student = Student("Harry", "Gryffindor")
 professor = Professor("Severus", "Defense Against the Dark Arts")
+
+print(student)
+print(professor)
 
 """
 
