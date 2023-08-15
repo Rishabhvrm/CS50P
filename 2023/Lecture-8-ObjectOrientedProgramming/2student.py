@@ -13,6 +13,7 @@ class Student:
         return f"{self.name} is from {self.house}"
 
     # class method
+    @classmethod
     def get(cls):
         name = input("Name: ")
         house = input("House: ")
