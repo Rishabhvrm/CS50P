@@ -55,5 +55,7 @@ if __name__ == "__main__":
 """
 Notes:
 
+return cls(name, house)
+    - instantiate a student object, an object of the class with 'name' and 'house'
 
 """
