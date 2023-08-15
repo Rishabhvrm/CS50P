@@ -45,8 +45,7 @@ class Student:
 
 
 def main():
-    student = get_student()
-    student._house = "privet"
+    student = Student.get()
     print(student)
 
 if __name__ == "__main__":
