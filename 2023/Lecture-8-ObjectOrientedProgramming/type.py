@@ -8,3 +8,13 @@ print(type(list()))
 
 print(type({}))
 print(type(dict()))
+
+# Class Method
+
+
+"""
+Class Method
+
+@classmethod
+
+"""
