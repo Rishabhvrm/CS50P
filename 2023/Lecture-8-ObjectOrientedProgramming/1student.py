@@ -21,6 +21,12 @@ class Student:
             case _:
                 return "/"
 
+    def house(self):
+        return self.house
+
+    def house(self, house):
+        self.house = house
+
     @property
     def name(self):
         return self._name
