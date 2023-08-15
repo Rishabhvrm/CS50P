@@ -105,7 +105,6 @@ Use a tuple when you don't want the values to get changed
 Use a list when you may want to change the values
 can change a tuple that contains list (can change list values)
 
-
 Classes:
 # enough code to define a class
 class Student:
@@ -114,7 +113,9 @@ class Student:
 instance methods:
     __init__(self)      # used to initialize the contents of an object from a class
     self - it gives us access to the object that was just created
-    self should be present in every method in a class which will reference to the current object
+    self
+        should be present in every method in a class which will reference to the current object
+        so that you have access to the current object
     make parameters optional by None (house = None)
     __str__ - more for users
     __repr__ - more for developer's eye
