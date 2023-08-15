@@ -21,14 +21,6 @@ class Student:
             case _:
                 return "/"
 
-    def house(self):
-        return self.house
-
-    def house(self, house):
-        if house not in list:
-            raise ValueError("Invalid house")
-        self.house = house
-
     @property
     def name(self):
         return self._name
@@ -141,6 +133,9 @@ if setter is there then we can't use student.house = "abc"
 
 function and variable can't have same name
 put an underscore to differentiate
+
+why ._ ??
+
 
 
 """
