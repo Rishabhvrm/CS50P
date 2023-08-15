@@ -24,6 +24,9 @@ class Professor(Wizard):
         super().__init__(name)
         self.subject = subject
 
+    def __str__(self):
+        print(self.name)
+
 wizard = Wizard("Albus")
 student = Student("Harry", "Gryffindor")
 professor = Professor("Severus", "Defense Against the Dark Arts")

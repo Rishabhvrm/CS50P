@@ -46,7 +46,7 @@ class Student:
 
 def main():
     student = Student.get()
-    print()
+    print(student)
 
 if __name__ == "__main__":
     main()
@@ -61,6 +61,6 @@ return cls(name, house)
 @staticmethod
 inheritance
     - let one class inherit/borrow attributes (methods/variables) from other class
-    
+
 
 """
