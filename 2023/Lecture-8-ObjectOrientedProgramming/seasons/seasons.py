@@ -14,7 +14,7 @@ def main():
         a = (date_obj)
         b = (date.today())
         c = (b - a)
-        print(c.days)
+        print(c.days * 24 * 60)
         date_diff = calculate_minutes(date_obj)
 
 
