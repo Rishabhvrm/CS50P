@@ -1,16 +1,18 @@
 from datetime import date
+import sys
 
 # expects date in YYYY-MM-DD format
 
 def main():
-    # date = input("Date of Birth: ")
+    date = input("Date of Birth: ")
 
-    print(date.fromisoformat('2019-12-04'))
+    try:
+        date_obj = date.fromisoformat(date)
+    except:
+        sys.exit("Invalid date")
+    else:
+        date_diff = calculate_minutes(date_obj)
 
-    # if date not in format:
-    #     sys.exit("Invalid date")
-    # else:
-    #     date_words = calculate_minutes(date)
 
 
 def calculate_minutes(date):
