@@ -4,10 +4,12 @@ import sys
 # expects date in YYYY-MM-DD format
 
 def main():
-    date = input("Date of Birth: ")
+    d = input("Date of Birth: ")
 
     try:
-        date_obj = date.fromisoformat(date)
+        print(date.fromisoformat('2019-12-04'))
+        date_obj = date.fromisoformat(d)
+        print(date_obj)
     except:
         sys.exit("Invalid date")
     else:
@@ -15,7 +17,7 @@ def main():
 
 
 
-def calculate_minutes(date):
+def calculate_minutes(d):
     ...
 
 
