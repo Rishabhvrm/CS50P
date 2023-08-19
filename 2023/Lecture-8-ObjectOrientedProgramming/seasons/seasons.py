@@ -8,10 +8,12 @@ def main():
 
     try:
         date_obj = date.fromisoformat(d)
-        print(date_obj)
     except:
         sys.exit("Invalid date")
     else:
+        a = (date_obj)
+        b = (date.today())
+        print(b - a)
         date_diff = calculate_minutes(date_obj)
 
 
