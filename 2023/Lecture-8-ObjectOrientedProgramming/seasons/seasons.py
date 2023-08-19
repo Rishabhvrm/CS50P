@@ -7,7 +7,6 @@ def main():
     d = input("Date of Birth: ")
 
     try:
-        print(date.fromisoformat('2019-12-04'))
         date_obj = date.fromisoformat(d)
         print(date_obj)
     except:
