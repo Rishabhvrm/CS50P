@@ -7,6 +7,12 @@ def main():
 
     if date not in format:
         sys.exit("Invalid date")
+    else:
+        date_words = calculate_minutes(date)
+
+
+def calculate_minutes(date):
+    
 
 
 if __name__ == "__main__":
