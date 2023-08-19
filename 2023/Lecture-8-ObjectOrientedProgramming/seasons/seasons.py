@@ -3,7 +3,7 @@ from datetime import date
 # expects date in YYYY-MM-DD format
 
 def main():
-    ...
+    input("Date of Birth: ")
 
 
 if __name__ == "__main__":
