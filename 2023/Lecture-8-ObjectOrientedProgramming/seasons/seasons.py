@@ -12,19 +12,13 @@ def main():
     except:
         sys.exit("Invalid date")
     else:
-        date_diff =
         print(calculate_minutes(date_obj), "minutes")
 
 
 def calculate_minutes(d_obj):
-    a = (d_obj)
-    b = (date.today())
-    c = (b - a)
-    minutes = (c.days * 24 * 60)
-    words = p.number_to_words(minutes, andword="")
-    return (words)
-
-
+    diff = date.today() - d_obj                         # calculate difference between today and given date
+    minutes = (diff.days * 24 * 60)                     # convert days into minutes
+    return p.number_to_words(minutes, andword="")      # use inflect to convert number to words
 
 if __name__ == "__main__":
     main()
