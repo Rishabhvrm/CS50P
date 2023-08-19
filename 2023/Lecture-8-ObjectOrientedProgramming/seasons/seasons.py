@@ -3,16 +3,19 @@ from datetime import date
 # expects date in YYYY-MM-DD format
 
 def main():
-    date = input("Date of Birth: ")
+    # date = input("Date of Birth: ")
 
-    if date not in format:
-        sys.exit("Invalid date")
-    else:
-        date_words = calculate_minutes(date)
+    print(date.fromisoformat('2019-12-04'))
+
+    # if date not in format:
+    #     sys.exit("Invalid date")
+    # else:
+    #     date_words = calculate_minutes(date)
 
 
 def calculate_minutes(date):
-    
+    ...
+
 
 
 if __name__ == "__main__":
