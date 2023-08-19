@@ -14,7 +14,7 @@ def main():
         sys.exit("Invalid date")
     else:
         date_diff = calculate_minutes(date_obj)
-        print(date_diff)
+        print(date_diff, "minutes")
 
 
 def calculate_minutes(d_obj):
