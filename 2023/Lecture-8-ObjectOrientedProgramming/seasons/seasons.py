@@ -18,7 +18,7 @@ def main():
 def calculate_minutes(d_obj):
     diff = date.today() - d_obj                         # calculate difference between today and given date
     minutes = (diff.days * 24 * 60)                     # convert days into minutes
-    return p.number_to_words(minutes, andword="")      # use inflect to convert number to words
+    return p.number_to_words(minutes, andword="")       # use inflect to convert number to words
 
 if __name__ == "__main__":
     main()
