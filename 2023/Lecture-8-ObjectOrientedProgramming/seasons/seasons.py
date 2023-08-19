@@ -3,18 +3,17 @@ import sys
 import inflect
 p = inflect.engine()
 
-# expects date in YYYY-MM-DD format
+
 
 def main():
-    d = input("Date of Birth: ")
-
     try:
-        date_obj = date.fromisoformat(d)
+        # expects date in YYYY-MM-DD format
+        date_obj = date.fromisoformat(input("Date of Birth: "))
     except:
         sys.exit("Invalid date")
     else:
-        date_diff = calculate_minutes(date_obj)
-        print(date_diff, "minutes")
+        date_diff =
+        print(calculate_minutes(date_obj), "minutes")
 
 
 def calculate_minutes(d_obj):
