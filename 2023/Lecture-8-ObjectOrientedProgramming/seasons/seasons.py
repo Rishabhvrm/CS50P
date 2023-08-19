@@ -12,7 +12,7 @@ def main():
     except:
         sys.exit("Invalid date")
     else:
-        print(calculate_minutes(date_obj), "minutes")
+        print(calculate_minutes(date_obj).capitalize(), "minutes")
 
 
 def calculate_minutes(d_obj):
