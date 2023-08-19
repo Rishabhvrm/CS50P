@@ -13,12 +13,12 @@ def main():
     else:
         a = (date_obj)
         b = (date.today())
-        print(b - a)
+        c = (b - a)
+        print(c.days)
         date_diff = calculate_minutes(date_obj)
 
 
-
-def calculate_minutes(d):
+def calculate_minutes(d_obj):
     ...
 
 
