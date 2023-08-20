@@ -8,6 +8,7 @@ def main():
         # expects date in YYYY-MM-DD format
         d = input("Date of Birth: ")
     except:
+        raise ValueError
         sys.exit("Invalid date")
     else:
         # print(calculate_minutes(date_obj).capitalize(), "minutes")
