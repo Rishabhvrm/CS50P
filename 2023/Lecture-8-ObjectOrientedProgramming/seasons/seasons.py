@@ -8,10 +8,8 @@ def main():
         # expects date in YYYY-MM-DD format
         d = input("Date of Birth: ")
         print(calculate_minutes(d))
-    except:
+    except ValueError:
         sys.exit("Invalid date")
-        raise ValueError("Invalid date")
-
 
 def calculate_minutes(d):
     d_obj = date.fromisoformat(d)
