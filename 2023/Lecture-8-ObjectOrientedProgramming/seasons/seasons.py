@@ -3,8 +3,6 @@ import sys
 import inflect
 p = inflect.engine()
 
-
-
 def main():
     try:
         # expects date in YYYY-MM-DD format
