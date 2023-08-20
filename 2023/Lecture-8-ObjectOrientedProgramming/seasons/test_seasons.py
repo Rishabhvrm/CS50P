@@ -14,3 +14,10 @@ def test_invalid_date():
 
 def test_ordinal_date():
     assert calculate_minutes("August 20, 2022") == "Invalid date"
+
+
+# making sure that a ValueError will be raised
+# for incorrect range
+def test_range1():
+    with pytest.raises(ValueError):
+        convert("6:70 AM to 8:90PM")

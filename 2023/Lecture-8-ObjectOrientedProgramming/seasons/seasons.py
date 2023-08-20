@@ -9,8 +9,8 @@ def main():
         d = input("Date of Birth: ")
         print(calculate_minutes(d))
     except:
+        sys.exit("Invalid date")
         raise ValueError("Invalid date")
-        # sys.exit("")
 
 
 def calculate_minutes(d):
