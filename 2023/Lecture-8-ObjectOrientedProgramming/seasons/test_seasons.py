@@ -12,4 +12,5 @@ def test_past_year():
 def test_invalid_date():
     assert("2022/08/20") == "Invalid date"
 
-def test_invalid_date()
+def test_ordinal_date():
+    assert("August 20, 2022") == "Invalid date"
